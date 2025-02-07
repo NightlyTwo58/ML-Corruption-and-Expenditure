@@ -308,7 +308,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2013,372,IRL,Ireland,10,Cereals,35051198.85
 2013,376,ISR,Israel,10,Cereals,25006000
 2013,380,ITA,Italy,10,Cereals,808524344
-2013,384,CIV,C魌e d'Ivoire,10,Cereals,17072057.96
+2013,384,CIV,C么te d'Ivoire,10,Cereals,17072057.96
 2013,388,JAM,Jamaica,10,Cereals,483743
 2013,392,JPN,Japan,10,Cereals,18150009
 2013,398,KAZ,Kazakhstan,10,Cereals,1338107779
@@ -337,7 +337,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2013,372,IRL,Ireland,26,"Ores, slag and ash",489645671.4
 2013,376,ISR,Israel,26,"Ores, slag and ash",3123000
 2013,380,ITA,Italy,26,"Ores, slag and ash",290079641
-2013,384,CIV,C魌e d'Ivoire,26,"Ores, slag and ash",20155497.43
+2013,384,CIV,C么te d'Ivoire,26,"Ores, slag and ash",20155497.43
 2013,388,JAM,Jamaica,26,"Ores, slag and ash",129395572
 2013,392,JPN,Japan,26,"Ores, slag and ash",136201078
 2013,398,KAZ,Kazakhstan,26,"Ores, slag and ash",2729550161
@@ -366,7 +366,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2013,372,IRL,Ireland,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",1092709932
 2013,376,ISR,Israel,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",1055061000
 2013,380,ITA,Italy,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",23151524035
-2013,384,CIV,C魌e d'Ivoire,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",2894882174
+2013,384,CIV,C么te d'Ivoire,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",2894882174
 2013,388,JAM,Jamaica,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",354619135
 2013,392,JPN,Japan,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",16682632469
 2013,398,KAZ,Kazakhstan,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",64621311133
@@ -397,7 +397,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2013,372,IRL,Ireland,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",851261650.7
 2013,376,ISR,Israel,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1207422000
 2013,380,ITA,Italy,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",2169554345
-2013,384,CIV,C魌e d'Ivoire,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",9988364.32
+2013,384,CIV,C么te d'Ivoire,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",9988364.32
 2013,388,JAM,Jamaica,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",536472765
 2013,392,JPN,Japan,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",3951039980
 2013,398,KAZ,Kazakhstan,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",3129128949
@@ -425,7 +425,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2013,372,IRL,Ireland,44,Wood and articles of wood; wood charcoal,483247221.2
 2013,376,ISR,Israel,44,Wood and articles of wood; wood charcoal,7725000
 2013,380,ITA,Italy,44,Wood and articles of wood; wood charcoal,1967519779
-2013,384,CIV,C魌e d'Ivoire,44,Wood and articles of wood; wood charcoal,208839748.2
+2013,384,CIV,C么te d'Ivoire,44,Wood and articles of wood; wood charcoal,208839748.2
 2013,388,JAM,Jamaica,44,Wood and articles of wood; wood charcoal,2022782
 2013,392,JPN,Japan,44,Wood and articles of wood; wood charcoal,126104233
 2013,398,KAZ,Kazakhstan,44,Wood and articles of wood; wood charcoal,5816470
@@ -709,7 +709,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2013,780,TTO,Trinidad and Tobago,44,Wood and articles of wood; wood charcoal,5048679.478
 2013,784,ARE,United Arab Emirates,44,Wood and articles of wood; wood charcoal,256966018.3
 2013,788,TUN,Tunisia,44,Wood and articles of wood; wood charcoal,19285700
-2013,792,TUR,T黵kiye,10,Cereals,320928660
+2013,792,TUR,T眉rkiye,10,Cereals,320928660
 2013,800,UGA,Uganda,10,Cereals,91792105
 2013,804,UKR,Ukraine,10,Cereals,6371334699
 2013,807,MKD,North Macedonia,10,Cereals,6276934
@@ -723,7 +723,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2013,882,WSM,Samoa,10,Cereals,58889
 2013,887,YEM,Yemen,10,Cereals,4244976
 2013,894,ZMB,Zambia,10,Cereals,161719470.8
-2013,792,TUR,T黵kiye,26,"Ores, slag and ash",1779830298
+2013,792,TUR,T眉rkiye,26,"Ores, slag and ash",1779830298
 2013,800,UGA,Uganda,26,"Ores, slag and ash",2652214
 2013,804,UKR,Ukraine,26,"Ores, slag and ash",3917528853
 2013,807,MKD,North Macedonia,26,"Ores, slag and ash",178356363
@@ -737,7 +737,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2013,882,WSM,Samoa,26,"Ores, slag and ash",86
 2013,887,YEM,Yemen,26,"Ores, slag and ash",50005
 2013,894,ZMB,Zambia,26,"Ores, slag and ash",94113870.94
-2013,792,TUR,T黵kiye,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",10117703534
+2013,792,TUR,T眉rkiye,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",10117703534
 2013,800,UGA,Uganda,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",153805824
 2013,804,UKR,Ukraine,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",2865374605
 2013,807,MKD,North Macedonia,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",106432505
@@ -751,7 +751,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2013,882,WSM,Samoa,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",15125038
 2013,887,YEM,Yemen,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",6448326711
 2013,894,ZMB,Zambia,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",198901553.6
-2013,792,TUR,T黵kiye,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1202387659
+2013,792,TUR,T眉rkiye,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1202387659
 2013,800,UGA,Uganda,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",3542386
 2013,804,UKR,Ukraine,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1744303013
 2013,807,MKD,North Macedonia,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",11597141
@@ -765,7 +765,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2013,882,WSM,Samoa,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",6862
 2013,887,YEM,Yemen,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",612051
 2013,894,ZMB,Zambia,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",506579048.9
-2013,792,TUR,T黵kiye,44,Wood and articles of wood; wood charcoal,715622690
+2013,792,TUR,T眉rkiye,44,Wood and articles of wood; wood charcoal,715622690
 2013,800,UGA,Uganda,44,Wood and articles of wood; wood charcoal,12824278
 2013,804,UKR,Ukraine,44,Wood and articles of wood; wood charcoal,1143721756
 2013,807,MKD,North Macedonia,44,Wood and articles of wood; wood charcoal,6228104
@@ -1090,7 +1090,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2014,372,IRL,Ireland,10,Cereals,23905616.92
 2014,376,ISR,Israel,10,Cereals,17756000
 2014,380,ITA,Italy,10,Cereals,914230639
-2014,384,CIV,C魌e d'Ivoire,10,Cereals,19700832.35
+2014,384,CIV,C么te d'Ivoire,10,Cereals,19700832.35
 2014,388,JAM,Jamaica,10,Cereals,51406.388
 2014,392,JPN,Japan,10,Cereals,24521630
 2014,398,KAZ,Kazakhstan,10,Cereals,1135006680
@@ -1117,7 +1117,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2014,372,IRL,Ireland,26,"Ores, slag and ash",476850008.7
 2014,376,ISR,Israel,26,"Ores, slag and ash",2946000
 2014,380,ITA,Italy,26,"Ores, slag and ash",374835597
-2014,384,CIV,C魌e d'Ivoire,26,"Ores, slag and ash",30460793.78
+2014,384,CIV,C么te d'Ivoire,26,"Ores, slag and ash",30460793.78
 2014,388,JAM,Jamaica,26,"Ores, slag and ash",131848861.3
 2014,392,JPN,Japan,26,"Ores, slag and ash",146153730
 2014,398,KAZ,Kazakhstan,26,"Ores, slag and ash",2603412023
@@ -1146,7 +1146,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2014,372,IRL,Ireland,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",1124800339
 2014,376,ISR,Israel,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",788596000
 2014,380,ITA,Italy,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",19713356285
-2014,384,CIV,C魌e d'Ivoire,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",2643769973
+2014,384,CIV,C么te d'Ivoire,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",2643769973
 2014,388,JAM,Jamaica,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",301794787.7
 2014,392,JPN,Japan,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",15824800763
 2014,398,KAZ,Kazakhstan,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",60700570856
@@ -1177,7 +1177,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2014,372,IRL,Ireland,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",821010299.4
 2014,376,ISR,Israel,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1096864000
 2014,380,ITA,Italy,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",2260937453
-2014,384,CIV,C魌e d'Ivoire,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",8876881.266
+2014,384,CIV,C么te d'Ivoire,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",8876881.266
 2014,388,JAM,Jamaica,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",540263005.8
 2014,392,JPN,Japan,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",3822673097
 2014,398,KAZ,Kazakhstan,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",2839228906
@@ -1204,7 +1204,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2014,372,IRL,Ireland,44,Wood and articles of wood; wood charcoal,523238670.4
 2014,376,ISR,Israel,44,Wood and articles of wood; wood charcoal,9891000
 2014,380,ITA,Italy,44,Wood and articles of wood; wood charcoal,2077943784
-2014,384,CIV,C魌e d'Ivoire,44,Wood and articles of wood; wood charcoal,225547286.3
+2014,384,CIV,C么te d'Ivoire,44,Wood and articles of wood; wood charcoal,225547286.3
 2014,388,JAM,Jamaica,44,Wood and articles of wood; wood charcoal,1850782.878
 2014,392,JPN,Japan,44,Wood and articles of wood; wood charcoal,168409399
 2014,398,KAZ,Kazakhstan,44,Wood and articles of wood; wood charcoal,5498228
@@ -1499,7 +1499,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2014,780,TTO,Trinidad and Tobago,44,Wood and articles of wood; wood charcoal,4495342.916
 2014,784,ARE,United Arab Emirates,44,Wood and articles of wood; wood charcoal,256895605.6
 2014,788,TUN,Tunisia,44,Wood and articles of wood; wood charcoal,18037840
-2014,792,TUR,T黵kiye,10,Cereals,313391844
+2014,792,TUR,T眉rkiye,10,Cereals,313391844
 2014,800,UGA,Uganda,10,Cereals,96837903
 2014,804,UKR,Ukraine,10,Cereals,6544132005
 2014,807,MKD,North Macedonia,10,Cereals,3804034
@@ -1512,7 +1512,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2014,882,WSM,Samoa,10,Cereals,16391
 2014,887,YEM,Yemen,10,Cereals,7815224
 2014,894,ZMB,Zambia,10,Cereals,78183555.03
-2014,792,TUR,T黵kiye,26,"Ores, slag and ash",1399033464
+2014,792,TUR,T眉rkiye,26,"Ores, slag and ash",1399033464
 2014,800,UGA,Uganda,26,"Ores, slag and ash",4856005
 2014,804,UKR,Ukraine,26,"Ores, slag and ash",3472393210
 2014,807,MKD,North Macedonia,26,"Ores, slag and ash",172678774
@@ -1524,7 +1524,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2014,858,URY,Uruguay,26,"Ores, slag and ash",1045842
 2014,887,YEM,Yemen,26,"Ores, slag and ash",33292
 2014,894,ZMB,Zambia,26,"Ores, slag and ash",57892302.88
-2014,792,TUR,T黵kiye,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",7500274360
+2014,792,TUR,T眉rkiye,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",7500274360
 2014,800,UGA,Uganda,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",184032783
 2014,804,UKR,Ukraine,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",2012699152
 2014,807,MKD,North Macedonia,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",87099638
@@ -1537,7 +1537,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2014,882,WSM,Samoa,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",17096902
 2014,887,YEM,Yemen,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",1349097490
 2014,894,ZMB,Zambia,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",106544149.1
-2014,792,TUR,T黵kiye,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1337664501
+2014,792,TUR,T眉rkiye,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1337664501
 2014,800,UGA,Uganda,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",2876694
 2014,804,UKR,Ukraine,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1178241226
 2014,807,MKD,North Macedonia,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",10501280
@@ -1550,7 +1550,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2014,882,WSM,Samoa,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",737
 2014,887,YEM,Yemen,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",495235
 2014,894,ZMB,Zambia,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",294681209.3
-2014,792,TUR,T黵kiye,44,Wood and articles of wood; wood charcoal,839069811
+2014,792,TUR,T眉rkiye,44,Wood and articles of wood; wood charcoal,839069811
 2014,800,UGA,Uganda,44,Wood and articles of wood; wood charcoal,16941594
 2014,804,UKR,Ukraine,44,Wood and articles of wood; wood charcoal,1261956161
 2014,807,MKD,North Macedonia,44,Wood and articles of wood; wood charcoal,6997704
@@ -1891,7 +1891,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2015,372,IRL,Ireland,10,Cereals,40534296.66
 2015,376,ISR,Israel,10,Cereals,16532000
 2015,380,ITA,Italy,10,Cereals,912559629
-2015,384,CIV,C魌e d'Ivoire,10,Cereals,9457927.243
+2015,384,CIV,C么te d'Ivoire,10,Cereals,9457927.243
 2015,388,JAM,Jamaica,10,Cereals,11837
 2015,392,JPN,Japan,10,Cereals,35835712
 2015,398,KAZ,Kazakhstan,10,Cereals,832543312
@@ -1920,7 +1920,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2015,372,IRL,Ireland,26,"Ores, slag and ash",319143160.8
 2015,376,ISR,Israel,26,"Ores, slag and ash",222000
 2015,380,ITA,Italy,26,"Ores, slag and ash",201809091.5
-2015,384,CIV,C魌e d'Ivoire,26,"Ores, slag and ash",20168482.49
+2015,384,CIV,C么te d'Ivoire,26,"Ores, slag and ash",20168482.49
 2015,388,JAM,Jamaica,26,"Ores, slag and ash",129858787
 2015,392,JPN,Japan,26,"Ores, slag and ash",141271088
 2015,398,KAZ,Kazakhstan,26,"Ores, slag and ash",1084150478
@@ -1949,7 +1949,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2015,372,IRL,Ireland,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",857616578.9
 2015,376,ISR,Israel,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",507320000
 2015,380,ITA,Italy,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",14681841425
-2015,384,CIV,C魌e d'Ivoire,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",1626330800
+2015,384,CIV,C么te d'Ivoire,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",1626330800
 2015,388,JAM,Jamaica,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",194447476
 2015,392,JPN,Japan,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",11380089464
 2015,398,KAZ,Kazakhstan,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",31119562305
@@ -1980,7 +1980,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2015,372,IRL,Ireland,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",762660383.4
 2015,376,ISR,Israel,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",943134000
 2015,380,ITA,Italy,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1839098178
-2015,384,CIV,C魌e d'Ivoire,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",14664382.94
+2015,384,CIV,C么te d'Ivoire,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",14664382.94
 2015,388,JAM,Jamaica,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",555429001
 2015,392,JPN,Japan,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",3510496723
 2015,398,KAZ,Kazakhstan,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",3105803215
@@ -2008,7 +2008,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2015,372,IRL,Ireland,44,Wood and articles of wood; wood charcoal,437056499.5
 2015,376,ISR,Israel,44,Wood and articles of wood; wood charcoal,7313000
 2015,380,ITA,Italy,44,Wood and articles of wood; wood charcoal,1818971444
-2015,384,CIV,C魌e d'Ivoire,44,Wood and articles of wood; wood charcoal,176419867.9
+2015,384,CIV,C么te d'Ivoire,44,Wood and articles of wood; wood charcoal,176419867.9
 2015,388,JAM,Jamaica,44,Wood and articles of wood; wood charcoal,1104334
 2015,392,JPN,Japan,44,Wood and articles of wood; wood charcoal,189443506
 2015,398,KAZ,Kazakhstan,44,Wood and articles of wood; wood charcoal,1615482
@@ -2300,7 +2300,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2015,780,TTO,Trinidad and Tobago,44,Wood and articles of wood; wood charcoal,4709654.796
 2015,784,ARE,United Arab Emirates,44,Wood and articles of wood; wood charcoal,254099539.8
 2015,788,TUN,Tunisia,44,Wood and articles of wood; wood charcoal,16881032
-2015,792,TUR,T黵kiye,10,Cereals,353947257
+2015,792,TUR,T眉rkiye,10,Cereals,353947257
 2015,800,UGA,Uganda,10,Cereals,142102494
 2015,804,UKR,Ukraine,10,Cereals,6057489963
 2015,807,MKD,North Macedonia,10,Cereals,4501514.78
@@ -2312,7 +2312,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2015,858,URY,Uruguay,10,Cereals,504691198
 2015,887,YEM,Yemen,10,Cereals,17749006
 2015,894,ZMB,Zambia,10,Cereals,219704424.7
-2015,792,TUR,T黵kiye,26,"Ores, slag and ash",1000102357
+2015,792,TUR,T眉rkiye,26,"Ores, slag and ash",1000102357
 2015,800,UGA,Uganda,26,"Ores, slag and ash",2368362
 2015,804,UKR,Ukraine,26,"Ores, slag and ash",2216459224
 2015,807,MKD,North Macedonia,26,"Ores, slag and ash",139367120.5
@@ -2323,7 +2323,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2015,854,BFA,Burkina Faso,26,"Ores, slag and ash",25566.435
 2015,858,URY,Uruguay,26,"Ores, slag and ash",408224
 2015,894,ZMB,Zambia,26,"Ores, slag and ash",34743563.81
-2015,792,TUR,T黵kiye,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",5148351329
+2015,792,TUR,T眉rkiye,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",5148351329
 2015,800,UGA,Uganda,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",149045435
 2015,804,UKR,Ukraine,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",488015617
 2015,807,MKD,North Macedonia,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",61568945.17
@@ -2336,7 +2336,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2015,882,WSM,Samoa,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",14901351
 2015,887,YEM,Yemen,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",996530
 2015,894,ZMB,Zambia,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",105308642.8
-2015,792,TUR,T黵kiye,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1269425512
+2015,792,TUR,T眉rkiye,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1269425512
 2015,800,UGA,Uganda,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1871982
 2015,804,UKR,Ukraine,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",967422063
 2015,807,MKD,North Macedonia,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",8406526.72
@@ -2349,7 +2349,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2015,882,WSM,Samoa,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",14172
 2015,887,YEM,Yemen,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",18430
 2015,894,ZMB,Zambia,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",78587698.93
-2015,792,TUR,T黵kiye,44,Wood and articles of wood; wood charcoal,711224360
+2015,792,TUR,T眉rkiye,44,Wood and articles of wood; wood charcoal,711224360
 2015,800,UGA,Uganda,44,Wood and articles of wood; wood charcoal,15093584
 2015,804,UKR,Ukraine,44,Wood and articles of wood; wood charcoal,1106385838
 2015,807,MKD,North Macedonia,44,Wood and articles of wood; wood charcoal,6665619.97
@@ -2694,7 +2694,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2016,372,IRL,Ireland,10,Cereals,18104174.5
 2016,376,ISR,Israel,10,Cereals,4610000
 2016,380,ITA,Italy,10,Cereals,778848791.6
-2016,384,CIV,C魌e d'Ivoire,10,Cereals,11184190.84
+2016,384,CIV,C么te d'Ivoire,10,Cereals,11184190.84
 2016,388,JAM,Jamaica,10,Cereals,202325
 2016,392,JPN,Japan,10,Cereals,33022648
 2016,398,KAZ,Kazakhstan,10,Cereals,816967981
@@ -2724,7 +2724,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2016,372,IRL,Ireland,26,"Ores, slag and ash",238870929.3
 2016,376,ISR,Israel,26,"Ores, slag and ash",1759000
 2016,380,ITA,Italy,26,"Ores, slag and ash",197949703.1
-2016,384,CIV,C魌e d'Ivoire,26,"Ores, slag and ash",12850651.91
+2016,384,CIV,C么te d'Ivoire,26,"Ores, slag and ash",12850651.91
 2016,388,JAM,Jamaica,26,"Ores, slag and ash",92154247
 2016,392,JPN,Japan,26,"Ores, slag and ash",143066164
 2016,398,KAZ,Kazakhstan,26,"Ores, slag and ash",1193597789
@@ -2755,7 +2755,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2016,372,IRL,Ireland,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",765124659.2
 2016,376,ISR,Israel,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",840585000
 2016,380,ITA,Italy,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",11963783594
-2016,384,CIV,C魌e d'Ivoire,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",1321373730
+2016,384,CIV,C么te d'Ivoire,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",1321373730
 2016,388,JAM,Jamaica,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",174738558
 2016,392,JPN,Japan,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",9372170034
 2016,398,KAZ,Kazakhstan,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",22334960815
@@ -2787,7 +2787,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2016,372,IRL,Ireland,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",645688582.5
 2016,376,ISR,Israel,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",998127000
 2016,380,ITA,Italy,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1507173969
-2016,384,CIV,C魌e d'Ivoire,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",10146571.54
+2016,384,CIV,C么te d'Ivoire,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",10146571.54
 2016,388,JAM,Jamaica,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",458344375
 2016,392,JPN,Japan,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",3775596143
 2016,398,KAZ,Kazakhstan,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",2413026785
@@ -2818,7 +2818,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2016,372,IRL,Ireland,44,Wood and articles of wood; wood charcoal,459233090
 2016,376,ISR,Israel,44,Wood and articles of wood; wood charcoal,8834000
 2016,380,ITA,Italy,44,Wood and articles of wood; wood charcoal,1876376811
-2016,384,CIV,C魌e d'Ivoire,44,Wood and articles of wood; wood charcoal,141556244.8
+2016,384,CIV,C么te d'Ivoire,44,Wood and articles of wood; wood charcoal,141556244.8
 2016,388,JAM,Jamaica,44,Wood and articles of wood; wood charcoal,2438709
 2016,392,JPN,Japan,44,Wood and articles of wood; wood charcoal,219404951
 2016,398,KAZ,Kazakhstan,44,Wood and articles of wood; wood charcoal,8110048
@@ -3111,7 +3111,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2016,780,TTO,Trinidad and Tobago,44,Wood and articles of wood; wood charcoal,3829573.617
 2016,784,ARE,United Arab Emirates,44,Wood and articles of wood; wood charcoal,185882128.5
 2016,788,TUN,Tunisia,44,Wood and articles of wood; wood charcoal,21586946
-2016,792,TUR,T黵kiye,10,Cereals,456753438
+2016,792,TUR,T眉rkiye,10,Cereals,456753438
 2016,800,UGA,Uganda,10,Cereals,144252062
 2016,804,UKR,Ukraine,10,Cereals,6073915229
 2016,807,MKD,North Macedonia,10,Cereals,5226942.38
@@ -3122,7 +3122,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2016,854,BFA,Burkina Faso,10,Cereals,5126126
 2016,858,URY,Uruguay,10,Cereals,543171535
 2016,894,ZMB,Zambia,10,Cereals,191258442
-2016,792,TUR,T黵kiye,26,"Ores, slag and ash",923611733
+2016,792,TUR,T眉rkiye,26,"Ores, slag and ash",923611733
 2016,800,UGA,Uganda,26,"Ores, slag and ash",2284374
 2016,804,UKR,Ukraine,26,"Ores, slag and ash",1954649424
 2016,807,MKD,North Macedonia,26,"Ores, slag and ash",125490403.4
@@ -3133,7 +3133,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2016,854,BFA,Burkina Faso,26,"Ores, slag and ash",85444
 2016,858,URY,Uruguay,26,"Ores, slag and ash",405364
 2016,894,ZMB,Zambia,26,"Ores, slag and ash",22234936.44
-2016,792,TUR,T黵kiye,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",3380089922
+2016,792,TUR,T眉rkiye,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",3380089922
 2016,800,UGA,Uganda,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",141733024
 2016,804,UKR,Ukraine,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",446457240.2
 2016,807,MKD,North Macedonia,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",57370844.67
@@ -3145,7 +3145,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2016,858,URY,Uruguay,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",33581818
 2016,882,WSM,Samoa,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",12041453
 2016,894,ZMB,Zambia,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",55650408.67
-2016,792,TUR,T黵kiye,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1092732971
+2016,792,TUR,T眉rkiye,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1092732971
 2016,800,UGA,Uganda,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1621536
 2016,804,UKR,Ukraine,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",631092172.3
 2016,807,MKD,North Macedonia,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",8423245.5
@@ -3157,7 +3157,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2016,858,URY,Uruguay,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",22187891
 2016,882,WSM,Samoa,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",12345
 2016,894,ZMB,Zambia,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",60081326.2
-2016,792,TUR,T黵kiye,44,Wood and articles of wood; wood charcoal,664666554
+2016,792,TUR,T眉rkiye,44,Wood and articles of wood; wood charcoal,664666554
 2016,800,UGA,Uganda,44,Wood and articles of wood; wood charcoal,28071377
 2016,804,UKR,Ukraine,44,Wood and articles of wood; wood charcoal,1130633879
 2016,807,MKD,North Macedonia,44,Wood and articles of wood; wood charcoal,7209025.65
@@ -3496,7 +3496,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2017,372,IRL,Ireland,10,Cereals,21713432.44
 2017,376,ISR,Israel,10,Cereals,5413000
 2017,380,ITA,Italy,10,Cereals,850603754.6
-2017,384,CIV,C魌e d'Ivoire,10,Cereals,22637323.38
+2017,384,CIV,C么te d'Ivoire,10,Cereals,22637323.38
 2017,388,JAM,Jamaica,10,Cereals,130647.62
 2017,392,JPN,Japan,10,Cereals,39106909.42
 2017,398,KAZ,Kazakhstan,10,Cereals,827758223
@@ -3528,7 +3528,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2017,372,IRL,Ireland,26,"Ores, slag and ash",316706531.5
 2017,376,ISR,Israel,26,"Ores, slag and ash",2355000
 2017,380,ITA,Italy,26,"Ores, slag and ash",209073290.9
-2017,384,CIV,C魌e d'Ivoire,26,"Ores, slag and ash",53751025.82
+2017,384,CIV,C么te d'Ivoire,26,"Ores, slag and ash",53751025.82
 2017,388,JAM,Jamaica,26,"Ores, slag and ash",92450183.71
 2017,392,JPN,Japan,26,"Ores, slag and ash",139129233.7
 2017,398,KAZ,Kazakhstan,26,"Ores, slag and ash",2119269693
@@ -3560,7 +3560,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2017,372,IRL,Ireland,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",1121388168
 2017,376,ISR,Israel,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",878897000
 2017,380,ITA,Italy,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",16262839381
-2017,384,CIV,C魌e d'Ivoire,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",1570959429
+2017,384,CIV,C么te d'Ivoire,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",1570959429
 2017,388,JAM,Jamaica,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",233941227.3
 2017,392,JPN,Japan,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",11378828781
 2017,398,KAZ,Kazakhstan,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",30715287929
@@ -3593,7 +3593,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2017,372,IRL,Ireland,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",799042143.2
 2017,376,ISR,Israel,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",850402000
 2017,380,ITA,Italy,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1641669621
-2017,384,CIV,C魌e d'Ivoire,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",9127494.847
+2017,384,CIV,C么te d'Ivoire,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",9127494.847
 2017,388,JAM,Jamaica,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",518144499.1
 2017,392,JPN,Japan,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",4642742034
 2017,398,KAZ,Kazakhstan,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",2166916711
@@ -3625,7 +3625,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2017,372,IRL,Ireland,44,Wood and articles of wood; wood charcoal,489547271.5
 2017,376,ISR,Israel,44,Wood and articles of wood; wood charcoal,9711000
 2017,380,ITA,Italy,44,Wood and articles of wood; wood charcoal,2060946030
-2017,384,CIV,C魌e d'Ivoire,44,Wood and articles of wood; wood charcoal,144235393
+2017,384,CIV,C么te d'Ivoire,44,Wood and articles of wood; wood charcoal,144235393
 2017,388,JAM,Jamaica,44,Wood and articles of wood; wood charcoal,2583740.45
 2017,392,JPN,Japan,44,Wood and articles of wood; wood charcoal,291134742.5
 2017,398,KAZ,Kazakhstan,44,Wood and articles of wood; wood charcoal,26546282.3
@@ -3662,7 +3662,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2017,516,NAM,Namibia,10,Cereals,49337.109
 2017,524,NPL,Nepal,10,Cereals,186026.526
 2017,528,NLD,Netherlands,10,Cereals,549127050.3
-2017,531,CUW,Cura鏰o,10,Cereals,601735.407
+2017,531,CUW,Cura莽ao,10,Cereals,601735.407
 2017,533,ABW,Aruba,10,Cereals,251573.735
 2017,554,NZL,New Zealand,10,Cereals,13905553.66
 2017,558,NIC,Nicaragua,10,Cereals,2859934.85
@@ -3758,7 +3758,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2017,516,NAM,Namibia,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",8098925.319
 2017,524,NPL,Nepal,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",451628.49
 2017,528,NLD,Netherlands,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",3887970382
-2017,531,CUW,Cura鏰o,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",416873.977
+2017,531,CUW,Cura莽ao,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",416873.977
 2017,533,ABW,Aruba,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",26678.77
 2017,554,NZL,New Zealand,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",16079808.81
 2017,558,NIC,Nicaragua,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1545936.78
@@ -3793,7 +3793,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2017,516,NAM,Namibia,44,Wood and articles of wood; wood charcoal,29995408.1
 2017,524,NPL,Nepal,44,Wood and articles of wood; wood charcoal,559999.005
 2017,528,NLD,Netherlands,44,Wood and articles of wood; wood charcoal,1513489219
-2017,531,CUW,Cura鏰o,44,Wood and articles of wood; wood charcoal,1161794.589
+2017,531,CUW,Cura莽ao,44,Wood and articles of wood; wood charcoal,1161794.589
 2017,533,ABW,Aruba,44,Wood and articles of wood; wood charcoal,170643.57
 2017,554,NZL,New Zealand,44,Wood and articles of wood; wood charcoal,3298558668
 2017,558,NIC,Nicaragua,44,Wood and articles of wood; wood charcoal,8971019.65
@@ -3926,7 +3926,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2017,780,TTO,Trinidad and Tobago,44,Wood and articles of wood; wood charcoal,4257554.765
 2017,784,ARE,United Arab Emirates,44,Wood and articles of wood; wood charcoal,140993412.2
 2017,788,TUN,Tunisia,44,Wood and articles of wood; wood charcoal,21666595.18
-2017,792,TUR,T黵kiye,10,Cereals,450488213
+2017,792,TUR,T眉rkiye,10,Cereals,450488213
 2017,800,UGA,Uganda,10,Cereals,183058709.4
 2017,804,UKR,Ukraine,10,Cereals,6501877183
 2017,807,MKD,North Macedonia,10,Cereals,6870076
@@ -3939,7 +3939,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2017,860,UZB,Uzbekistan,10,Cereals,53019386.99
 2017,882,WSM,Samoa,10,Cereals,26621.224
 2017,894,ZMB,Zambia,10,Cereals,100759643.8
-2017,792,TUR,T黵kiye,26,"Ores, slag and ash",1396672456
+2017,792,TUR,T眉rkiye,26,"Ores, slag and ash",1396672456
 2017,800,UGA,Uganda,26,"Ores, slag and ash",2254525.87
 2017,804,UKR,Ukraine,26,"Ores, slag and ash",2736136849
 2017,807,MKD,North Macedonia,26,"Ores, slag and ash",201618048.7
@@ -3952,7 +3952,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2017,860,UZB,Uzbekistan,26,"Ores, slag and ash",368882
 2017,882,WSM,Samoa,26,"Ores, slag and ash",3.957
 2017,894,ZMB,Zambia,26,"Ores, slag and ash",37714282.89
-2017,792,TUR,T黵kiye,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",4799234020
+2017,792,TUR,T眉rkiye,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",4799234020
 2017,800,UGA,Uganda,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",186864488.6
 2017,804,UKR,Ukraine,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",790374003.8
 2017,807,MKD,North Macedonia,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",85482305.6
@@ -3965,7 +3965,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2017,860,UZB,Uzbekistan,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",1607635912
 2017,882,WSM,Samoa,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",12906154.42
 2017,894,ZMB,Zambia,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",73168377.31
-2017,792,TUR,T黵kiye,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1328444172
+2017,792,TUR,T眉rkiye,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1328444172
 2017,800,UGA,Uganda,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1982070.61
 2017,804,UKR,Ukraine,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",780581257.8
 2017,807,MKD,North Macedonia,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",9534960.58
@@ -3978,7 +3978,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2017,860,UZB,Uzbekistan,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",42181479.99
 2017,882,WSM,Samoa,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",21431.037
 2017,894,ZMB,Zambia,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",96969842.13
-2017,792,TUR,T黵kiye,44,Wood and articles of wood; wood charcoal,752055473
+2017,792,TUR,T眉rkiye,44,Wood and articles of wood; wood charcoal,752055473
 2017,800,UGA,Uganda,44,Wood and articles of wood; wood charcoal,23051045.82
 2017,804,UKR,Ukraine,44,Wood and articles of wood; wood charcoal,1204743211
 2017,807,MKD,North Macedonia,44,Wood and articles of wood; wood charcoal,7355408.66
@@ -4306,7 +4306,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2018,372,IRL,Ireland,10,Cereals,22226294.74
 2018,376,ISR,Israel,10,Cereals,3343000
 2018,380,ITA,Italy,10,Cereals,740042127.1
-2018,384,CIV,C魌e d'Ivoire,10,Cereals,6929312.526
+2018,384,CIV,C么te d'Ivoire,10,Cereals,6929312.526
 2018,388,JAM,Jamaica,10,Cereals,442518.71
 2018,392,JPN,Japan,10,Cereals,47077633.55
 2018,398,KAZ,Kazakhstan,10,Cereals,1304450662
@@ -4337,7 +4337,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2018,372,IRL,Ireland,26,"Ores, slag and ash",312943674.1
 2018,376,ISR,Israel,26,"Ores, slag and ash",2016000
 2018,380,ITA,Italy,26,"Ores, slag and ash",220262267.6
-2018,384,CIV,C魌e d'Ivoire,26,"Ores, slag and ash",119129123.6
+2018,384,CIV,C么te d'Ivoire,26,"Ores, slag and ash",119129123.6
 2018,388,JAM,Jamaica,26,"Ores, slag and ash",100289323.3
 2018,392,JPN,Japan,26,"Ores, slag and ash",170631796.6
 2018,398,KAZ,Kazakhstan,26,"Ores, slag and ash",2097832725
@@ -4368,7 +4368,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2018,372,IRL,Ireland,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",1207073884
 2018,376,ISR,Israel,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",1401945000
 2018,380,ITA,Italy,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",18367972231
-2018,384,CIV,C魌e d'Ivoire,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",1882618245
+2018,384,CIV,C么te d'Ivoire,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",1882618245
 2018,388,JAM,Jamaica,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",280328992.4
 2018,392,JPN,Japan,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",13362085937
 2018,398,KAZ,Kazakhstan,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",42796415169
@@ -4401,7 +4401,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2018,372,IRL,Ireland,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",997723284.1
 2018,376,ISR,Israel,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",902270000
 2018,380,ITA,Italy,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1862521084
-2018,384,CIV,C魌e d'Ivoire,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",14439450.56
+2018,384,CIV,C么te d'Ivoire,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",14439450.56
 2018,388,JAM,Jamaica,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1137117125
 2018,392,JPN,Japan,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",5844209933
 2018,398,KAZ,Kazakhstan,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",2138055355
@@ -4434,7 +4434,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2018,372,IRL,Ireland,44,Wood and articles of wood; wood charcoal,561829015.2
 2018,376,ISR,Israel,44,Wood and articles of wood; wood charcoal,8276000
 2018,380,ITA,Italy,44,Wood and articles of wood; wood charcoal,2224592863
-2018,384,CIV,C魌e d'Ivoire,44,Wood and articles of wood; wood charcoal,131088888.2
+2018,384,CIV,C么te d'Ivoire,44,Wood and articles of wood; wood charcoal,131088888.2
 2018,388,JAM,Jamaica,44,Wood and articles of wood; wood charcoal,3562680.79
 2018,392,JPN,Japan,44,Wood and articles of wood; wood charcoal,317661057.7
 2018,398,KAZ,Kazakhstan,44,Wood and articles of wood; wood charcoal,52206912.41
@@ -4470,7 +4470,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2018,516,NAM,Namibia,10,Cereals,46006.913
 2018,524,NPL,Nepal,10,Cereals,202749.24
 2018,528,NLD,Netherlands,10,Cereals,706929677.6
-2018,531,CUW,Cura鏰o,10,Cereals,652623.862
+2018,531,CUW,Cura莽ao,10,Cereals,652623.862
 2018,533,ABW,Aruba,10,Cereals,315.642
 2018,554,NZL,New Zealand,10,Cereals,13275372.76
 2018,558,NIC,Nicaragua,10,Cereals,3656248.74
@@ -4502,7 +4502,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2018,516,NAM,Namibia,26,"Ores, slag and ash",825420378.2
 2018,524,NPL,Nepal,26,"Ores, slag and ash",20421.1
 2018,528,NLD,Netherlands,26,"Ores, slag and ash",1426436358
-2018,531,CUW,Cura鏰o,26,"Ores, slag and ash",335.195
+2018,531,CUW,Cura莽ao,26,"Ores, slag and ash",335.195
 2018,554,NZL,New Zealand,26,"Ores, slag and ash",3369579.249
 2018,558,NIC,Nicaragua,26,"Ores, slag and ash",515734.77
 2018,562,NER,Niger,26,"Ores, slag and ash",206142692.1
@@ -4532,7 +4532,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2018,516,NAM,Namibia,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",43101893
 2018,524,NPL,Nepal,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",131749.2
 2018,528,NLD,Netherlands,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",81363413446
-2018,531,CUW,Cura鏰o,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",3296.08
+2018,531,CUW,Cura莽ao,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",3296.08
 2018,533,ABW,Aruba,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",41458.658
 2018,554,NZL,New Zealand,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",742566982.6
 2018,558,NIC,Nicaragua,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",13395342.1
@@ -4566,7 +4566,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2018,516,NAM,Namibia,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",22874485.71
 2018,524,NPL,Nepal,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",53341.84
 2018,528,NLD,Netherlands,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",4557949301
-2018,531,CUW,Cura鏰o,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",622344.618
+2018,531,CUW,Cura莽ao,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",622344.618
 2018,533,ABW,Aruba,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",13389.385
 2018,554,NZL,New Zealand,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",14882742.01
 2018,558,NIC,Nicaragua,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1604596.54
@@ -4600,7 +4600,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2018,516,NAM,Namibia,44,Wood and articles of wood; wood charcoal,38210150.6
 2018,524,NPL,Nepal,44,Wood and articles of wood; wood charcoal,284668.14
 2018,528,NLD,Netherlands,44,Wood and articles of wood; wood charcoal,1673081662
-2018,531,CUW,Cura鏰o,44,Wood and articles of wood; wood charcoal,1191951.953
+2018,531,CUW,Cura莽ao,44,Wood and articles of wood; wood charcoal,1191951.953
 2018,533,ABW,Aruba,44,Wood and articles of wood; wood charcoal,163599.995
 2018,554,NZL,New Zealand,44,Wood and articles of wood; wood charcoal,3629700045
 2018,558,NIC,Nicaragua,44,Wood and articles of wood; wood charcoal,9278887.22
@@ -4734,7 +4734,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2018,780,TTO,Trinidad and Tobago,44,Wood and articles of wood; wood charcoal,5643655.745
 2018,784,ARE,United Arab Emirates,44,Wood and articles of wood; wood charcoal,244287756.7
 2018,788,TUN,Tunisia,44,Wood and articles of wood; wood charcoal,28374944.09
-2018,792,TUR,T黵kiye,10,Cereals,380457677
+2018,792,TUR,T眉rkiye,10,Cereals,380457677
 2018,800,UGA,Uganda,10,Cereals,192023928.7
 2018,804,UKR,Ukraine,10,Cereals,7240557677
 2018,807,MKD,North Macedonia,10,Cereals,10977432.79
@@ -4748,7 +4748,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2018,882,WSM,Samoa,10,Cereals,55293.974
 2018,887,YEM,Yemen,10,Cereals,2884227.079
 2018,894,ZMB,Zambia,10,Cereals,46255342.22
-2018,792,TUR,T黵kiye,26,"Ores, slag and ash",1328338718
+2018,792,TUR,T眉rkiye,26,"Ores, slag and ash",1328338718
 2018,800,UGA,Uganda,26,"Ores, slag and ash",2561776.2
 2018,804,UKR,Ukraine,26,"Ores, slag and ash",3035252891
 2018,807,MKD,North Macedonia,26,"Ores, slag and ash",216883389.6
@@ -4760,7 +4760,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2018,858,URY,Uruguay,26,"Ores, slag and ash",114460
 2018,860,UZB,Uzbekistan,26,"Ores, slag and ash",19643820
 2018,894,ZMB,Zambia,26,"Ores, slag and ash",33372079.46
-2018,792,TUR,T黵kiye,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",5809571513
+2018,792,TUR,T眉rkiye,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",5809571513
 2018,800,UGA,Uganda,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",166822016.7
 2018,804,UKR,Ukraine,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",861312452.9
 2018,807,MKD,North Macedonia,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",117268908.6
@@ -4773,7 +4773,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2018,860,UZB,Uzbekistan,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",2666740142
 2018,882,WSM,Samoa,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",11858719.13
 2018,894,ZMB,Zambia,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",93584169.48
-2018,792,TUR,T黵kiye,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1872225341
+2018,792,TUR,T眉rkiye,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1872225341
 2018,800,UGA,Uganda,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",4054133.25
 2018,804,UKR,Ukraine,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",883220359.9
 2018,807,MKD,North Macedonia,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",8749835.78
@@ -4786,7 +4786,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2018,860,UZB,Uzbekistan,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",39874096
 2018,882,WSM,Samoa,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",413.427
 2018,894,ZMB,Zambia,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",201393018.5
-2018,792,TUR,T黵kiye,44,Wood and articles of wood; wood charcoal,817846980
+2018,792,TUR,T眉rkiye,44,Wood and articles of wood; wood charcoal,817846980
 2018,800,UGA,Uganda,44,Wood and articles of wood; wood charcoal,32833859.13
 2018,804,UKR,Ukraine,44,Wood and articles of wood; wood charcoal,1492545186
 2018,807,MKD,North Macedonia,44,Wood and articles of wood; wood charcoal,9189745.19
@@ -5114,7 +5114,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2019,372,IRL,Ireland,10,Cereals,37218368.11
 2019,376,ISR,Israel,10,Cereals,1782000
 2019,380,ITA,Italy,10,Cereals,721409069.5
-2019,384,CIV,C魌e d'Ivoire,10,Cereals,10979373.78
+2019,384,CIV,C么te d'Ivoire,10,Cereals,10979373.78
 2019,388,JAM,Jamaica,10,Cereals,260996.481
 2019,392,JPN,Japan,10,Cereals,55819135.81
 2019,398,KAZ,Kazakhstan,10,Cereals,1347661866
@@ -5145,7 +5145,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2019,372,IRL,Ireland,26,"Ores, slag and ash",194633265.8
 2019,376,ISR,Israel,26,"Ores, slag and ash",1464000
 2019,380,ITA,Italy,26,"Ores, slag and ash",162531460.6
-2019,384,CIV,C魌e d'Ivoire,26,"Ores, slag and ash",171493016.1
+2019,384,CIV,C么te d'Ivoire,26,"Ores, slag and ash",171493016.1
 2019,388,JAM,Jamaica,26,"Ores, slag and ash",95902493.81
 2019,392,JPN,Japan,26,"Ores, slag and ash",181912711.2
 2019,398,KAZ,Kazakhstan,26,"Ores, slag and ash",2727132484
@@ -5177,7 +5177,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2019,372,IRL,Ireland,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",991932828.2
 2019,376,ISR,Israel,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",1201388000
 2019,380,ITA,Italy,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",15733559439
-2019,384,CIV,C魌e d'Ivoire,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",2135940147
+2019,384,CIV,C么te d'Ivoire,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",2135940147
 2019,388,JAM,Jamaica,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",378417587.9
 2019,392,JPN,Japan,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",14010929792
 2019,398,KAZ,Kazakhstan,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",38462878193
@@ -5209,7 +5209,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2019,372,IRL,Ireland,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",931610694.7
 2019,376,ISR,Israel,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",953487000
 2019,380,ITA,Italy,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1713363801
-2019,384,CIV,C魌e d'Ivoire,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",9165108.144
+2019,384,CIV,C么te d'Ivoire,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",9165108.144
 2019,388,JAM,Jamaica,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",715051359.7
 2019,392,JPN,Japan,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",6249363647
 2019,398,KAZ,Kazakhstan,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",2177688338
@@ -5242,7 +5242,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2019,372,IRL,Ireland,44,Wood and articles of wood; wood charcoal,520859858.4
 2019,376,ISR,Israel,44,Wood and articles of wood; wood charcoal,9169000
 2019,380,ITA,Italy,44,Wood and articles of wood; wood charcoal,2274101426
-2019,384,CIV,C魌e d'Ivoire,44,Wood and articles of wood; wood charcoal,117722506.5
+2019,384,CIV,C么te d'Ivoire,44,Wood and articles of wood; wood charcoal,117722506.5
 2019,388,JAM,Jamaica,44,Wood and articles of wood; wood charcoal,3458356.261
 2019,392,JPN,Japan,44,Wood and articles of wood; wood charcoal,317100660.9
 2019,398,KAZ,Kazakhstan,44,Wood and articles of wood; wood charcoal,48911076.57
@@ -5279,7 +5279,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2019,516,NAM,Namibia,10,Cereals,132220.026
 2019,524,NPL,Nepal,10,Cereals,276195.92
 2019,528,NLD,Netherlands,10,Cereals,703370546.8
-2019,531,CUW,Cura鏰o,10,Cereals,632286.05
+2019,531,CUW,Cura莽ao,10,Cereals,632286.05
 2019,533,ABW,Aruba,10,Cereals,731.285
 2019,554,NZL,New Zealand,10,Cereals,15499662.19
 2019,558,NIC,Nicaragua,10,Cereals,2599590.02
@@ -5373,7 +5373,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2019,516,NAM,Namibia,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",7610136.938
 2019,524,NPL,Nepal,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",28515.78
 2019,528,NLD,Netherlands,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",4725741078
-2019,531,CUW,Cura鏰o,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",531560.503
+2019,531,CUW,Cura莽ao,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",531560.503
 2019,533,ABW,Aruba,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",7341.899
 2019,554,NZL,New Zealand,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",17464235.46
 2019,558,NIC,Nicaragua,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1606341.98
@@ -5407,7 +5407,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2019,516,NAM,Namibia,44,Wood and articles of wood; wood charcoal,43466355.09
 2019,524,NPL,Nepal,44,Wood and articles of wood; wood charcoal,468194.16
 2019,528,NLD,Netherlands,44,Wood and articles of wood; wood charcoal,1672631562
-2019,531,CUW,Cura鏰o,44,Wood and articles of wood; wood charcoal,1337364.884
+2019,531,CUW,Cura莽ao,44,Wood and articles of wood; wood charcoal,1337364.884
 2019,533,ABW,Aruba,44,Wood and articles of wood; wood charcoal,168705.023
 2019,554,NZL,New Zealand,44,Wood and articles of wood; wood charcoal,3314820419
 2019,558,NIC,Nicaragua,44,Wood and articles of wood; wood charcoal,10378250.81
@@ -5529,7 +5529,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2019,780,TTO,Trinidad and Tobago,44,Wood and articles of wood; wood charcoal,4655594.84
 2019,784,ARE,United Arab Emirates,44,Wood and articles of wood; wood charcoal,271094991.3
 2019,788,TUN,Tunisia,44,Wood and articles of wood; wood charcoal,26966003.8
-2019,792,TUR,T黵kiye,10,Cereals,345165190
+2019,792,TUR,T眉rkiye,10,Cereals,345165190
 2019,800,UGA,Uganda,10,Cereals,119784702.9
 2019,804,UKR,Ukraine,10,Cereals,9633333768
 2019,807,MKD,North Macedonia,10,Cereals,10143410.26
@@ -5543,7 +5543,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2019,882,WSM,Samoa,10,Cereals,39756.96
 2019,887,YEM,Yemen,10,Cereals,17024.273
 2019,894,ZMB,Zambia,10,Cereals,39291593.79
-2019,792,TUR,T黵kiye,26,"Ores, slag and ash",1229458776
+2019,792,TUR,T眉rkiye,26,"Ores, slag and ash",1229458776
 2019,800,UGA,Uganda,26,"Ores, slag and ash",2329745.58
 2019,804,UKR,Ukraine,26,"Ores, slag and ash",3590241306
 2019,807,MKD,North Macedonia,26,"Ores, slag and ash",219001500
@@ -5555,7 +5555,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2019,858,URY,Uruguay,26,"Ores, slag and ash",97005
 2019,860,UZB,Uzbekistan,26,"Ores, slag and ash",43642966.86
 2019,894,ZMB,Zambia,26,"Ores, slag and ash",35389921.83
-2019,792,TUR,T黵kiye,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",8447378574
+2019,792,TUR,T眉rkiye,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",8447378574
 2019,800,UGA,Uganda,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",177346576.8
 2019,804,UKR,Ukraine,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",863025319.2
 2019,807,MKD,North Macedonia,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",146741233.3
@@ -5569,7 +5569,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2019,882,WSM,Samoa,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",12184073.58
 2019,887,YEM,Yemen,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",12307.68
 2019,894,ZMB,Zambia,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",94416136.64
-2019,792,TUR,T黵kiye,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1876775748
+2019,792,TUR,T眉rkiye,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1876775748
 2019,800,UGA,Uganda,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",3139326.01
 2019,804,UKR,Ukraine,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",796273153.5
 2019,807,MKD,North Macedonia,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",20299510.38
@@ -5583,7 +5583,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2019,882,WSM,Samoa,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",75.75
 2019,887,YEM,Yemen,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",3860.128
 2019,894,ZMB,Zambia,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",168008943.9
-2019,792,TUR,T黵kiye,44,Wood and articles of wood; wood charcoal,874707790
+2019,792,TUR,T眉rkiye,44,Wood and articles of wood; wood charcoal,874707790
 2019,800,UGA,Uganda,44,Wood and articles of wood; wood charcoal,35376213.05
 2019,804,UKR,Ukraine,44,Wood and articles of wood; wood charcoal,1398290415
 2019,807,MKD,North Macedonia,44,Wood and articles of wood; wood charcoal,9523953.45
@@ -5901,7 +5901,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2020,372,IRL,Ireland,10,Cereals,45241396.7
 2020,376,ISR,Israel,10,Cereals,1298000
 2020,380,ITA,Italy,10,Cereals,832269711.6
-2020,384,CIV,C魌e d'Ivoire,10,Cereals,20198542.14
+2020,384,CIV,C么te d'Ivoire,10,Cereals,20198542.14
 2020,388,JAM,Jamaica,10,Cereals,379653.95
 2020,392,JPN,Japan,10,Cereals,59353011.22
 2020,398,KAZ,Kazakhstan,10,Cereals,1370529166
@@ -5930,7 +5930,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2020,372,IRL,Ireland,26,"Ores, slag and ash",212314821.4
 2020,376,ISR,Israel,26,"Ores, slag and ash",2048000
 2020,380,ITA,Italy,26,"Ores, slag and ash",130741049.4
-2020,384,CIV,C魌e d'Ivoire,26,"Ores, slag and ash",164409120.5
+2020,384,CIV,C么te d'Ivoire,26,"Ores, slag and ash",164409120.5
 2020,388,JAM,Jamaica,26,"Ores, slag and ash",88614109.85
 2020,392,JPN,Japan,26,"Ores, slag and ash",158550343
 2020,398,KAZ,Kazakhstan,26,"Ores, slag and ash",3539057954
@@ -5959,7 +5959,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2020,372,IRL,Ireland,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",890310725.7
 2020,376,ISR,Israel,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",1282992000
 2020,380,ITA,Italy,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",10181646597
-2020,384,CIV,C魌e d'Ivoire,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",1279937436
+2020,384,CIV,C么te d'Ivoire,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",1279937436
 2020,388,JAM,Jamaica,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",271505008.1
 2020,392,JPN,Japan,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",7628748832
 2020,398,KAZ,Kazakhstan,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",27381233570
@@ -5991,7 +5991,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2020,372,IRL,Ireland,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",850672924.3
 2020,376,ISR,Israel,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1105991000
 2020,380,ITA,Italy,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1738625054
-2020,384,CIV,C魌e d'Ivoire,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",12033299.82
+2020,384,CIV,C么te d'Ivoire,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",12033299.82
 2020,388,JAM,Jamaica,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",439543146.8
 2020,392,JPN,Japan,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",6819772876
 2020,398,KAZ,Kazakhstan,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",2369116115
@@ -6021,7 +6021,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2020,372,IRL,Ireland,44,Wood and articles of wood; wood charcoal,509834783.6
 2020,376,ISR,Israel,44,Wood and articles of wood; wood charcoal,6486000
 2020,380,ITA,Italy,44,Wood and articles of wood; wood charcoal,2029700256
-2020,384,CIV,C魌e d'Ivoire,44,Wood and articles of wood; wood charcoal,105483735.4
+2020,384,CIV,C么te d'Ivoire,44,Wood and articles of wood; wood charcoal,105483735.4
 2020,388,JAM,Jamaica,44,Wood and articles of wood; wood charcoal,3736726.59
 2020,392,JPN,Japan,44,Wood and articles of wood; wood charcoal,334542201.9
 2020,398,KAZ,Kazakhstan,44,Wood and articles of wood; wood charcoal,8127412.29
@@ -6055,7 +6055,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2020,516,NAM,Namibia,10,Cereals,159396.378
 2020,524,NPL,Nepal,10,Cereals,20815.67
 2020,528,NLD,Netherlands,10,Cereals,650458144.7
-2020,531,CUW,Cura鏰o,10,Cereals,674022.083
+2020,531,CUW,Cura莽ao,10,Cereals,674022.083
 2020,533,ABW,Aruba,10,Cereals,563.128
 2020,554,NZL,New Zealand,10,Cereals,4350669.406
 2020,558,NIC,Nicaragua,10,Cereals,2061065.84
@@ -6086,7 +6086,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2020,516,NAM,Namibia,26,"Ores, slag and ash",717725427.5
 2020,524,NPL,Nepal,26,"Ores, slag and ash",20536.34
 2020,528,NLD,Netherlands,26,"Ores, slag and ash",1269837247
-2020,531,CUW,Cura鏰o,26,"Ores, slag and ash",59497.183
+2020,531,CUW,Cura莽ao,26,"Ores, slag and ash",59497.183
 2020,533,ABW,Aruba,26,"Ores, slag and ash",86.592
 2020,554,NZL,New Zealand,26,"Ores, slag and ash",7175273.323
 2020,562,NER,Niger,26,"Ores, slag and ash",252737942.3
@@ -6150,7 +6150,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2020,516,NAM,Namibia,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",71411189.77
 2020,524,NPL,Nepal,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",11906.97
 2020,528,NLD,Netherlands,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",4197470110
-2020,531,CUW,Cura鏰o,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",372625.553
+2020,531,CUW,Cura莽ao,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",372625.553
 2020,533,ABW,Aruba,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",6512.849
 2020,554,NZL,New Zealand,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",13850584.37
 2020,558,NIC,Nicaragua,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1579623.38
@@ -6184,7 +6184,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2020,516,NAM,Namibia,44,Wood and articles of wood; wood charcoal,51535761.1
 2020,524,NPL,Nepal,44,Wood and articles of wood; wood charcoal,448106.13
 2020,528,NLD,Netherlands,44,Wood and articles of wood; wood charcoal,1895273810
-2020,531,CUW,Cura鏰o,44,Wood and articles of wood; wood charcoal,664133.819
+2020,531,CUW,Cura莽ao,44,Wood and articles of wood; wood charcoal,664133.819
 2020,533,ABW,Aruba,44,Wood and articles of wood; wood charcoal,136611.169
 2020,554,NZL,New Zealand,44,Wood and articles of wood; wood charcoal,2843300490
 2020,558,NIC,Nicaragua,44,Wood and articles of wood; wood charcoal,10877166.27
@@ -6307,7 +6307,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2020,780,TTO,Trinidad and Tobago,44,Wood and articles of wood; wood charcoal,3370262.405
 2020,784,ARE,United Arab Emirates,44,Wood and articles of wood; wood charcoal,179265223
 2020,788,TUN,Tunisia,44,Wood and articles of wood; wood charcoal,23122117.24
-2020,792,TUR,T黵kiye,10,Cereals,289969935
+2020,792,TUR,T眉rkiye,10,Cereals,289969935
 2020,800,UGA,Uganda,10,Cereals,102419319
 2020,804,UKR,Ukraine,10,Cereals,9417632971
 2020,807,MKD,North Macedonia,10,Cereals,8345737.91
@@ -6319,7 +6319,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2020,858,URY,Uruguay,10,Cereals,558769251
 2020,860,UZB,Uzbekistan,10,Cereals,15992490.98
 2020,894,ZMB,Zambia,10,Cereals,42689581.27
-2020,792,TUR,T黵kiye,26,"Ores, slag and ash",1384358990
+2020,792,TUR,T眉rkiye,26,"Ores, slag and ash",1384358990
 2020,800,UGA,Uganda,26,"Ores, slag and ash",595785
 2020,804,UKR,Ukraine,26,"Ores, slag and ash",4422736703
 2020,807,MKD,North Macedonia,26,"Ores, slag and ash",196503583.9
@@ -6331,7 +6331,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2020,858,URY,Uruguay,26,"Ores, slag and ash",44363
 2020,860,UZB,Uzbekistan,26,"Ores, slag and ash",27755215.99
 2020,894,ZMB,Zambia,26,"Ores, slag and ash",252142278.5
-2020,792,TUR,T黵kiye,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",4715232979
+2020,792,TUR,T眉rkiye,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",4715232979
 2020,800,UGA,Uganda,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",98572556
 2020,804,UKR,Ukraine,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",555505383.7
 2020,807,MKD,North Macedonia,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",93652352.53
@@ -6343,7 +6343,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2020,858,URY,Uruguay,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",85170616
 2020,860,UZB,Uzbekistan,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",785401535.2
 2020,894,ZMB,Zambia,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",135102520.1
-2020,792,TUR,T黵kiye,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1648229264
+2020,792,TUR,T眉rkiye,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1648229264
 2020,800,UGA,Uganda,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",2259505
 2020,804,UKR,Ukraine,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",741808959.4
 2020,807,MKD,North Macedonia,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",12270180.81
@@ -6355,7 +6355,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2020,858,URY,Uruguay,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",21983358
 2020,860,UZB,Uzbekistan,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",32626777.88
 2020,894,ZMB,Zambia,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",101426624.7
-2020,792,TUR,T黵kiye,44,Wood and articles of wood; wood charcoal,977025001
+2020,792,TUR,T眉rkiye,44,Wood and articles of wood; wood charcoal,977025001
 2020,800,UGA,Uganda,44,Wood and articles of wood; wood charcoal,49826313
 2020,804,UKR,Ukraine,44,Wood and articles of wood; wood charcoal,1409773969
 2020,807,MKD,North Macedonia,44,Wood and articles of wood; wood charcoal,6901594.99
@@ -6686,7 +6686,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2021,372,IRL,Ireland,10,Cereals,66068787.98
 2021,376,ISR,Israel,10,Cereals,1545000
 2021,380,ITA,Italy,10,Cereals,988288135.3
-2021,384,CIV,C魌e d'Ivoire,10,Cereals,17528853.1
+2021,384,CIV,C么te d'Ivoire,10,Cereals,17528853.1
 2021,388,JAM,Jamaica,10,Cereals,433193.57
 2021,392,JPN,Japan,10,Cereals,63633170.45
 2021,398,KAZ,Kazakhstan,10,Cereals,1659503974
@@ -6716,7 +6716,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2021,372,IRL,Ireland,26,"Ores, slag and ash",274537422.9
 2021,376,ISR,Israel,26,"Ores, slag and ash",4018000
 2021,380,ITA,Italy,26,"Ores, slag and ash",195258991.6
-2021,384,CIV,C魌e d'Ivoire,26,"Ores, slag and ash",146000989.5
+2021,384,CIV,C么te d'Ivoire,26,"Ores, slag and ash",146000989.5
 2021,388,JAM,Jamaica,26,"Ores, slag and ash",71830135.95
 2021,392,JPN,Japan,26,"Ores, slag and ash",178473734.4
 2021,398,KAZ,Kazakhstan,26,"Ores, slag and ash",4173496770
@@ -6744,7 +6744,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2021,372,IRL,Ireland,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",1124302715
 2021,376,ISR,Israel,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",2252676000
 2021,380,ITA,Italy,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",18338887095
-2021,384,CIV,C魌e d'Ivoire,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",1719089230
+2021,384,CIV,C么te d'Ivoire,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",1719089230
 2021,388,JAM,Jamaica,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",509022506.4
 2021,392,JPN,Japan,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",10228412817
 2021,398,KAZ,Kazakhstan,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",34818874635
@@ -6775,7 +6775,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2021,372,IRL,Ireland,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1136259003
 2021,376,ISR,Israel,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1093734000
 2021,380,ITA,Italy,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1953936868
-2021,384,CIV,C魌e d'Ivoire,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",9483422.254
+2021,384,CIV,C么te d'Ivoire,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",9483422.254
 2021,388,JAM,Jamaica,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",399882152.8
 2021,392,JPN,Japan,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",9400932335
 2021,398,KAZ,Kazakhstan,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",2511508214
@@ -6805,7 +6805,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2021,372,IRL,Ireland,44,Wood and articles of wood; wood charcoal,815882361.8
 2021,376,ISR,Israel,44,Wood and articles of wood; wood charcoal,7660000
 2021,380,ITA,Italy,44,Wood and articles of wood; wood charcoal,2661773619
-2021,384,CIV,C魌e d'Ivoire,44,Wood and articles of wood; wood charcoal,176482440.2
+2021,384,CIV,C么te d'Ivoire,44,Wood and articles of wood; wood charcoal,176482440.2
 2021,388,JAM,Jamaica,44,Wood and articles of wood; wood charcoal,4108102.74
 2021,392,JPN,Japan,44,Wood and articles of wood; wood charcoal,432517114.7
 2021,398,KAZ,Kazakhstan,44,Wood and articles of wood; wood charcoal,14052226.23
@@ -7089,7 +7089,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2021,780,TTO,Trinidad and Tobago,44,Wood and articles of wood; wood charcoal,4149750.061
 2021,784,ARE,United Arab Emirates,44,Wood and articles of wood; wood charcoal,269120889.6
 2021,788,TUN,Tunisia,44,Wood and articles of wood; wood charcoal,31768489.92
-2021,792,TUR,T黵kiye,10,Cereals,416431868
+2021,792,TUR,T眉rkiye,10,Cereals,416431868
 2021,800,UGA,Uganda,10,Cereals,51924524.83
 2021,804,UKR,Ukraine,10,Cereals,11843938109
 2021,807,MKD,North Macedonia,10,Cereals,18408030.35
@@ -7102,7 +7102,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2021,860,UZB,Uzbekistan,10,Cereals,7871550.99
 2021,882,WSM,Samoa,10,Cereals,8199.813
 2021,894,ZMB,Zambia,10,Cereals,46633365.17
-2021,792,TUR,T黵kiye,26,"Ores, slag and ash",2166684485
+2021,792,TUR,T眉rkiye,26,"Ores, slag and ash",2166684485
 2021,800,UGA,Uganda,26,"Ores, slag and ash",13577477.63
 2021,804,UKR,Ukraine,26,"Ores, slag and ash",7027239289
 2021,807,MKD,North Macedonia,26,"Ores, slag and ash",255082552.8
@@ -7114,7 +7114,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2021,858,URY,Uruguay,26,"Ores, slag and ash",99995
 2021,860,UZB,Uzbekistan,26,"Ores, slag and ash",40492657.99
 2021,894,ZMB,Zambia,26,"Ores, slag and ash",140753492.7
-2021,792,TUR,T黵kiye,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",8506561990
+2021,792,TUR,T眉rkiye,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",8506561990
 2021,800,UGA,Uganda,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",136571892.1
 2021,804,UKR,Ukraine,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",743169747.7
 2021,807,MKD,North Macedonia,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",150071469.8
@@ -7127,7 +7127,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2021,860,UZB,Uzbekistan,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",904091801.9
 2021,882,WSM,Samoa,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",3138626.903
 2021,894,ZMB,Zambia,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",182783354.1
-2021,792,TUR,T黵kiye,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",2195170798
+2021,792,TUR,T眉rkiye,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",2195170798
 2021,800,UGA,Uganda,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",3815851.48
 2021,804,UKR,Ukraine,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",947177887.4
 2021,807,MKD,North Macedonia,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",14190312.11
@@ -7140,7 +7140,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2021,860,UZB,Uzbekistan,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",48789942.82
 2021,882,WSM,Samoa,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",5503.416
 2021,894,ZMB,Zambia,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",78121760.07
-2021,792,TUR,T黵kiye,44,Wood and articles of wood; wood charcoal,1473640250
+2021,792,TUR,T眉rkiye,44,Wood and articles of wood; wood charcoal,1473640250
 2021,800,UGA,Uganda,44,Wood and articles of wood; wood charcoal,42441378.4
 2021,804,UKR,Ukraine,44,Wood and articles of wood; wood charcoal,1939864326
 2021,807,MKD,North Macedonia,44,Wood and articles of wood; wood charcoal,8736562.41
@@ -7456,7 +7456,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2022,372,IRL,Ireland,10,Cereals,66246993.41
 2022,376,ISR,Israel,10,Cereals,735000
 2022,380,ITA,Italy,10,Cereals,1173759399
-2022,384,CIV,C魌e d'Ivoire,10,Cereals,24840402.32
+2022,384,CIV,C么te d'Ivoire,10,Cereals,24840402.32
 2022,388,JAM,Jamaica,10,Cereals,579291.01
 2022,392,JPN,Japan,10,Cereals,57069017.88
 2022,398,KAZ,Kazakhstan,10,Cereals,2215962569
@@ -7484,7 +7484,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2022,372,IRL,Ireland,26,"Ores, slag and ash",296604052.8
 2022,376,ISR,Israel,26,"Ores, slag and ash",3911000
 2022,380,ITA,Italy,26,"Ores, slag and ash",289073917.9
-2022,384,CIV,C魌e d'Ivoire,26,"Ores, slag and ash",172306378.1
+2022,384,CIV,C么te d'Ivoire,26,"Ores, slag and ash",172306378.1
 2022,388,JAM,Jamaica,26,"Ores, slag and ash",76342570.59
 2022,392,JPN,Japan,26,"Ores, slag and ash",165779266
 2022,398,KAZ,Kazakhstan,26,"Ores, slag and ash",4145383626
@@ -7511,7 +7511,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2022,372,IRL,Ireland,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",1896461045
 2022,376,ISR,Israel,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",3860444000
 2022,380,ITA,Italy,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",31299350824
-2022,384,CIV,C魌e d'Ivoire,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",3042320470
+2022,384,CIV,C么te d'Ivoire,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",3042320470
 2022,388,JAM,Jamaica,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",1031320245
 2022,392,JPN,Japan,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",18248127394
 2022,398,KAZ,Kazakhstan,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",51788935962
@@ -7542,7 +7542,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2022,372,IRL,Ireland,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",2143409866
 2022,376,ISR,Israel,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1529009000
 2022,380,ITA,Italy,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",2506620531
-2022,384,CIV,C魌e d'Ivoire,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",5647898.859
+2022,384,CIV,C么te d'Ivoire,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",5647898.859
 2022,388,JAM,Jamaica,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",251219149.5
 2022,392,JPN,Japan,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",10342128193
 2022,398,KAZ,Kazakhstan,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",3574079660
@@ -7572,7 +7572,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2022,372,IRL,Ireland,44,Wood and articles of wood; wood charcoal,824181761.8
 2022,376,ISR,Israel,44,Wood and articles of wood; wood charcoal,7136000
 2022,380,ITA,Italy,44,Wood and articles of wood; wood charcoal,2787652226
-2022,384,CIV,C魌e d'Ivoire,44,Wood and articles of wood; wood charcoal,132414993.8
+2022,384,CIV,C么te d'Ivoire,44,Wood and articles of wood; wood charcoal,132414993.8
 2022,388,JAM,Jamaica,44,Wood and articles of wood; wood charcoal,4519523.25
 2022,392,JPN,Japan,44,Wood and articles of wood; wood charcoal,400709553.1
 2022,398,KAZ,Kazakhstan,44,Wood and articles of wood; wood charcoal,49889788.36
@@ -7847,7 +7847,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2022,780,TTO,Trinidad and Tobago,44,Wood and articles of wood; wood charcoal,4390496.635
 2022,784,ARE,United Arab Emirates,44,Wood and articles of wood; wood charcoal,323759480.1
 2022,788,TUN,Tunisia,44,Wood and articles of wood; wood charcoal,34691312.16
-2022,792,TUR,T黵kiye,10,Cereals,688542028
+2022,792,TUR,T眉rkiye,10,Cereals,688542028
 2022,800,UGA,Uganda,10,Cereals,83942863.93
 2022,804,UKR,Ukraine,10,Cereals,9170803255
 2022,807,MKD,North Macedonia,10,Cereals,20342325.96
@@ -7860,7 +7860,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2022,860,UZB,Uzbekistan,10,Cereals,10094740.98
 2022,882,WSM,Samoa,10,Cereals,61479.528
 2022,894,ZMB,Zambia,10,Cereals,113480351.4
-2022,792,TUR,T黵kiye,26,"Ores, slag and ash",2246031864
+2022,792,TUR,T眉rkiye,26,"Ores, slag and ash",2246031864
 2022,800,UGA,Uganda,26,"Ores, slag and ash",29401751.63
 2022,804,UKR,Ukraine,26,"Ores, slag and ash",3084064330
 2022,807,MKD,North Macedonia,26,"Ores, slag and ash",248881815.6
@@ -7872,7 +7872,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2022,858,URY,Uruguay,26,"Ores, slag and ash",131133
 2022,860,UZB,Uzbekistan,26,"Ores, slag and ash",22798446.99
 2022,894,ZMB,Zambia,26,"Ores, slag and ash",237097362
-2022,792,TUR,T黵kiye,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",16411096285
+2022,792,TUR,T眉rkiye,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",16411096285
 2022,800,UGA,Uganda,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",151808576.5
 2022,804,UKR,Ukraine,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",1044558436
 2022,807,MKD,North Macedonia,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",383111556.3
@@ -7885,7 +7885,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2022,860,UZB,Uzbekistan,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",1216273447
 2022,882,WSM,Samoa,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",12056271.49
 2022,894,ZMB,Zambia,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",316698336.9
-2022,792,TUR,T黵kiye,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",3548060619
+2022,792,TUR,T眉rkiye,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",3548060619
 2022,800,UGA,Uganda,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",7852026.63
 2022,804,UKR,Ukraine,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",326999952.6
 2022,807,MKD,North Macedonia,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",23934895.54
@@ -7898,7 +7898,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2022,860,UZB,Uzbekistan,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",101082724.9
 2022,882,WSM,Samoa,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",7266.685
 2022,894,ZMB,Zambia,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",246986074.6
-2022,792,TUR,T黵kiye,44,Wood and articles of wood; wood charcoal,1801834874
+2022,792,TUR,T眉rkiye,44,Wood and articles of wood; wood charcoal,1801834874
 2022,800,UGA,Uganda,44,Wood and articles of wood; wood charcoal,100828495.9
 2022,804,UKR,Ukraine,44,Wood and articles of wood; wood charcoal,1889992933
 2022,807,MKD,North Macedonia,44,Wood and articles of wood; wood charcoal,13565067.86
@@ -8191,7 +8191,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2023,372,IRL,Ireland,10,Cereals,68068690.39
 2023,376,ISR,Israel,10,Cereals,875007
 2023,380,ITA,Italy,10,Cereals,1171789215
-2023,384,CIV,C魌e d'Ivoire,10,Cereals,21190081.18
+2023,384,CIV,C么te d'Ivoire,10,Cereals,21190081.18
 2023,388,JAM,Jamaica,10,Cereals,815767.56
 2023,392,JPN,Japan,10,Cereals,69621414.97
 2023,398,KAZ,Kazakhstan,10,Cereals,2184224709
@@ -8218,7 +8218,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2023,372,IRL,Ireland,26,"Ores, slag and ash",140142000.8
 2023,376,ISR,Israel,26,"Ores, slag and ash",4739177
 2023,380,ITA,Italy,26,"Ores, slag and ash",262326532.3
-2023,384,CIV,C魌e d'Ivoire,26,"Ores, slag and ash",159302760.9
+2023,384,CIV,C么te d'Ivoire,26,"Ores, slag and ash",159302760.9
 2023,388,JAM,Jamaica,26,"Ores, slag and ash",68007417.6
 2023,392,JPN,Japan,26,"Ores, slag and ash",195351611.7
 2023,398,KAZ,Kazakhstan,26,"Ores, slag and ash",4978095302
@@ -8245,7 +8245,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2023,372,IRL,Ireland,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",1031701812
 2023,376,ISR,Israel,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",4231797460
 2023,380,ITA,Italy,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",23817226682
-2023,384,CIV,C魌e d'Ivoire,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",2893941097
+2023,384,CIV,C么te d'Ivoire,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",2893941097
 2023,388,JAM,Jamaica,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",867551929.2
 2023,392,JPN,Japan,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",12726473279
 2023,398,KAZ,Kazakhstan,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",46399281048
@@ -8275,7 +8275,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2023,372,IRL,Ireland,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",3150662080
 2023,376,ISR,Israel,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1279088713
 2023,380,ITA,Italy,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",2348817117
-2023,384,CIV,C魌e d'Ivoire,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",16643786.97
+2023,384,CIV,C么te d'Ivoire,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",16643786.97
 2023,388,JAM,Jamaica,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",484691146.6
 2023,392,JPN,Japan,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",8844906307
 2023,398,KAZ,Kazakhstan,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",4347322214
@@ -8304,7 +8304,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2023,372,IRL,Ireland,44,Wood and articles of wood; wood charcoal,698831613.1
 2023,376,ISR,Israel,44,Wood and articles of wood; wood charcoal,7123558
 2023,380,ITA,Italy,44,Wood and articles of wood; wood charcoal,2660935442
-2023,384,CIV,C魌e d'Ivoire,44,Wood and articles of wood; wood charcoal,106906617.1
+2023,384,CIV,C么te d'Ivoire,44,Wood and articles of wood; wood charcoal,106906617.1
 2023,388,JAM,Jamaica,44,Wood and articles of wood; wood charcoal,2709599.75
 2023,392,JPN,Japan,44,Wood and articles of wood; wood charcoal,359129710
 2023,398,KAZ,Kazakhstan,44,Wood and articles of wood; wood charcoal,136871339.6
@@ -8552,7 +8552,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2023,780,TTO,Trinidad and Tobago,44,Wood and articles of wood; wood charcoal,5326788.47
 2023,784,ARE,United Arab Emirates,44,Wood and articles of wood; wood charcoal,250997204.4
 2023,788,TUN,Tunisia,44,Wood and articles of wood; wood charcoal,35375861.53
-2023,792,TUR,T黵kiye,10,Cereals,1733189035
+2023,792,TUR,T眉rkiye,10,Cereals,1733189035
 2023,800,UGA,Uganda,10,Cereals,188955724.6
 2023,804,UKR,Ukraine,10,Cereals,8306532857
 2023,807,MKD,North Macedonia,10,Cereals,18583324.23
@@ -8565,7 +8565,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2023,860,UZB,Uzbekistan,10,Cereals,52809285.48
 2023,882,WSM,Samoa,10,Cereals,30138.798
 2023,894,ZMB,Zambia,10,Cereals,65665592.7
-2023,792,TUR,T黵kiye,26,"Ores, slag and ash",2028080151
+2023,792,TUR,T眉rkiye,26,"Ores, slag and ash",2028080151
 2023,800,UGA,Uganda,26,"Ores, slag and ash",73713572.96
 2023,804,UKR,Ukraine,26,"Ores, slag and ash",1870049736
 2023,807,MKD,North Macedonia,26,"Ores, slag and ash",221085083.4
@@ -8577,7 +8577,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2023,858,URY,Uruguay,26,"Ores, slag and ash",96356
 2023,860,UZB,Uzbekistan,26,"Ores, slag and ash",12161489.98
 2023,894,ZMB,Zambia,26,"Ores, slag and ash",248440261.1
-2023,792,TUR,T黵kiye,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",16389206844
+2023,792,TUR,T眉rkiye,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",16389206844
 2023,800,UGA,Uganda,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",186759140.7
 2023,804,UKR,Ukraine,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",392253861.6
 2023,807,MKD,North Macedonia,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",370160059.2
@@ -8590,7 +8590,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2023,860,UZB,Uzbekistan,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",968413712.6
 2023,882,WSM,Samoa,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",17875873.97
 2023,894,ZMB,Zambia,27,"Mineral fuels, mineral oils and products of their distillation; bituminous substances; mineral waxes",415950235.8
-2023,792,TUR,T黵kiye,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",2901593632
+2023,792,TUR,T眉rkiye,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",2901593632
 2023,800,UGA,Uganda,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",9006213.21
 2023,804,UKR,Ukraine,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",118015643.6
 2023,807,MKD,North Macedonia,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",19649162.6
@@ -8603,7 +8603,7 @@ year,country_code,country_code_letter,country_name,export_code,export_name,dolla
 2023,860,UZB,Uzbekistan,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",74671906.61
 2023,882,WSM,Samoa,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",1988.112
 2023,894,ZMB,Zambia,28,"Inorganic chemicals; organic and inorganic compounds of precious metals; of rare earth metals, of radio-active elements and of isotopes",168027842
-2023,792,TUR,T黵kiye,44,Wood and articles of wood; wood charcoal,1774843297
+2023,792,TUR,T眉rkiye,44,Wood and articles of wood; wood charcoal,1774843297
 2023,800,UGA,Uganda,44,Wood and articles of wood; wood charcoal,133956232.4
 2023,804,UKR,Ukraine,44,Wood and articles of wood; wood charcoal,1488783296
 2023,807,MKD,North Macedonia,44,Wood and articles of wood; wood charcoal,14291122.18
