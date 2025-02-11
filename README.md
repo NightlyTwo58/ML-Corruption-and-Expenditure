@@ -13,3 +13,14 @@ Dataset Source:
 1. [UN Comtrade](https://comtradeplus.un.org)
 [Oil dataset](https://comtradeplus.un.org/TradeFlow?Frequency=A&Flows=X&CommodityCodes=2709&Partners=0&Reporters=all&period=all&AggregateBy=none&BreakdownMode=plus)
 2. [HDI Data, UNDP](https://hdr.undp.org/sites/default/files/2023-24_HDR/HDR23-24_Composite_indices_complete_time_series.csv)
+
+Research tool:
+1.Google colab
+2.python
+3.Excel
+
+Research method:
+1. Organize data using Excel, sort and delete useless rows and columns.
+2. Merge CVS tables with Python and reorganize data again.
+3. Draw a scatter plot using Python and draw preliminary conclusions
+4. Apply linear regression, cluster analysis, and nonlinear regression. Draw a regression curve in a scatter plot. The final conclusion is drawn.
