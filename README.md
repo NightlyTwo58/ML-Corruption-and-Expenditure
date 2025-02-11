@@ -19,7 +19,7 @@ Research tool:
 2.python
 3.Excel
 
-Research method:
+Research process:
 1. Organize data using Excel, sort and delete useless rows and columns.
 2. Merge CVS tables with Python and reorganize data again.
 3. Draw a scatter plot using Python and draw preliminary conclusions
