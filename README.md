@@ -23,4 +23,4 @@ Research method:
 1. Organize data using Excel, sort and delete useless rows and columns.
 2. Merge CVS tables with Python and reorganize data again.
 3. Draw a scatter plot using Python and draw preliminary conclusions
-4. Apply linear regression, cluster analysis, and nonlinear regression. Draw a regression curve in a scatter plot. The final conclusion is drawn.
+4. Apply linear regression, cluster analysis, and nonlinear regression.
