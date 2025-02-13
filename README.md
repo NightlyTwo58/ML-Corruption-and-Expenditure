@@ -3,11 +3,9 @@ Names: Richard Cai (rjc432), Wenkai Zhao (wz459)
 
 Abstract:
 
-1.   Effect of exports of different natural resources on the [HDI Index of](https://hdr.undp.org/data-center/human-development-index#/indicies/HDI) countries worldwide. Read on the "[resource curse](https://wikipedia.org/wiki/resource_curse)" and "[dutch disease](https://wikipedia.org/wiki/dutch_disease)" on [Wikipedia.org](https://Wikipedia.org).
-2.   
+The effect of natural resource exports on the [HDI Index of](https://hdr.undp.org/data-center/human-development-index#/indicies/HDI) countries worldwide has been a historically contested topic, with some argueing that it accelerates local development through capital inflow, while others argue that it actually renders a net negative effect through fostering curruption & complacency through the creation of a rentier state. The negative impacts of such exports are often cited in phenomenon such as the supposed "[resource curse](https://wikipedia.org/wiki/resource_curse)" and "[dutch disease](https://wikipedia.org/wiki/dutch_disease)". We aim to investigate these two competiting but not necessarily exclusionary hypothesises through one unified index to acheieve a net determination on the true impacts of natural resource exports. We examined the impact of cereal, oil, lumber, rare earth metal, and ore exports from countries worldwide from the period 2010~2020 on their "[human development index (HDI)](https://hdr.undp.org/data-center/human-development-index#/indicies/HDI)", an composite index of life expectancy, education, and standard of living.
 
-Specifics:
-Currently we are examining the impact of cereal, oil, lumber, rare earth metal, and ore exports from countries worldwide from the period 2010~2020 on their huamn development index and associated trends.
+Our analysis primarily was composed of linear regression, K-means clustering, and some additional nonlinear regression. These were augmented by various measures of accuracy and visualizations to confirm trends, such as RMS and trendline visualizations.
 
 Dataset Source:
 1. [UN Comtrade](https://comtradeplus.un.org)
