@@ -125,7 +125,7 @@ for data, color, label in zip(datasets, colors, labels):
                 c=color, label=label, alpha=0.7, edgecolors='k')
 
 # 添加图例和标签
-plt.xlabel("Export Amount in dollars")
+plt.xlabel("Unscaled Export Amount in dollars")
 plt.ylabel("HDI Value")
 plt.title("Scatter Plot of Different Resource Types (Filtered Data)")
 plt.legend()
@@ -134,6 +134,7 @@ plt.grid(True)
 # 显示图表
 plt.show()
 
+fig = plt.figure(figsize=(12, 8))  # 12x8 inches (you can change these numbers as needed)
 for i, (data, color, label) in enumerate(zip(datasets, colors, labels), 1):
     data_clean = clean_data(data).copy()  # Keep all original columns
 
@@ -149,21 +150,21 @@ for i, (data, color, label) in enumerate(zip(datasets, colors, labels), 1):
     # Create individual subplots for clustering
     plt.subplot(2, 3, i)
     sns.scatterplot(x=data_clean.iloc[:, 3], y=data_clean.iloc[:, 4], hue=data_clean["Cluster"], palette="viridis")
-    plt.xlabel("Export Amount in dollars")
-    plt.ylabel("HDI Value (Capped at 1)")
+    plt.xlabel("Scaled Export Amount")
+    plt.ylabel("Scaled HDI Value")
     plt.title(f"Clustering in {label}")
     plt.ylim(0, 1)
     for j in range(kmeans.n_clusters):
         plt.plot(centroids[j, 0], centroids[j, 1], 'kx', markersize=10)
 
     # Extract and print clustered data for each dataset
-    print(f"=== Clustering Results for {label} ===")
-    for j in range(kmeans.n_clusters):
-        cluster_data = data_clean[data_clean["Cluster"] == j]  # Keeps all original columns
-        print(f"Cluster {j} data for {label}:")
-        print(cluster_data)
+    # print(f"=== Clustering Results for {label} ===")
+    # for j in range(kmeans.n_clusters):
+    #     cluster_data = data_clean[data_clean["Cluster"] == j]  # Keeps all original columns
+    #     print(f"Cluster {j} data for {label}:")
+    #     print(cluster_data)
         # Saving the data to a CSV
-        cluster_data.to_csv(f"cluster_{j}_data_{label}.csv", index=False)
+        # cluster_data.to_csv(f"cluster_{j}_data_{label}.csv", index=False)
 
 plt.tight_layout()
 plt.show()
