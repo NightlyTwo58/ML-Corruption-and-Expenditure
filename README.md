@@ -31,12 +31,6 @@ We specifically focus on the export of cereal, oil, lumber, rare earth metals, a
 
 ## Getting Started
 
-### Prerequisites
-
-* Python 3.x
-* Required Python libraries (see `requirements.txt`)
-* Microsoft Excel (for initial data organization)
-
 ### Installation
 
 1.  **Clone the repository:**
@@ -69,7 +63,8 @@ The datasets used in this project are publicly available:
 2.  **HDI Data, UNDP:**
     * **Direct download:** [https://hdr.undp.org/sites/default/files/2023-24_HDR/HDR23-24_Composite_indices_complete_time_series.csv](https://hdr.undp.org/sites/default/files/2023-24_HDR/HDR23-24_Composite_indices_complete_time_series.csv)
 
-Please place the downloaded datasets in a `data/raw` directory within the project's root folder.
+3.  **Population Data, World Bank:**
+    * **Direct download:** [https://hdr.undp.org/sites/default/files/2023-24_HDR/HDR23-24_Composite_indices_complete_time_series.csv](https://hdr.undp.org/sites/default/files/2023-24_HDR/HDR23-24_Composite_indices_complete_time_series.csv)
 
 ### Project Structure
 
@@ -127,12 +122,9 @@ The primary workflow involves running Python scripts sequentially to process dat
 * **Richard Cai** (rjc432)
 * **Wenkai Zhao** (wz459)
 
-## License
-
-*(Consider adding a license, e.g., MIT, Apache 2.0. If you don't have one yet, you can add a placeholder like: "Distributed under the [LICENSE NAME] License. See `LICENSE` for more information.")*
-
 ## Acknowledgments
 
 * [UN Comtrade](https://comtradeplus.un.org) for trade data.
 * [United Nations Development Programme (UNDP)](https://hdr.undp.org/data-center/human-development-index#/indicies/HDI) for Human Development Index data.
+* [World Bank DataBank](https://databank.worldbank.org/source/population-estimates-and-projections#) for population data.
 * Wikipedia for definitions of [resource curse](https://wikipedia.org/wiki/resource_curse) and [Dutch disease](https://wikipedia.org/wiki/dutch_disease).
