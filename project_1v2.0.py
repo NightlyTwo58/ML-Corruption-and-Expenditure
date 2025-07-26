@@ -67,7 +67,6 @@ def histogram(df):
 
     Args:
         df (pandas.DataFrame): The DataFrame containing 'year' and 'HDI_value' data.
-        title_suffix (str): A string to append to the plot title.
     """
     df['HDI_value'] = pd.to_numeric(df['HDI_value'], errors='coerce')
     df_cleaned = df.dropna(subset=['HDI_value'])
@@ -253,7 +252,7 @@ if __name__ == "__main__":
 
     print("\n--- Plotting and HDI Correlation ---")
     # TODO: rewrite histogram for
-    histogram(all_exports_capita[0]);
+    histogram(all_exports_capita[0])
     # TODO: rewrite plot_scatter for
     for export, label in zip(all_exports_capita, labels):
         plot_scatter(export, label)
@@ -265,7 +264,7 @@ if __name__ == "__main__":
     for i, export in enumerate(all_exports_capita):
         plt.figure(i)
         kmeans_visual(export, ['dollar_per_capita', 'HDI_value'], 5)
-    plt.show();
+    plt.show()
 
     # print("\n--- Performing K-Means Clustering ---")
     # mineral_df_clustered, mineral_centroids = perform_kmeans_clustering(
@@ -290,7 +289,7 @@ if __name__ == "__main__":
             p0=[0.1, 0.1]
         )
 
-    plt.show();
+    plt.show()
 
     # with split functionality; currently, split functionality is x-income based
     # perform_nonlinear_regression(
