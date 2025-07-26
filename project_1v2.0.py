@@ -4,6 +4,7 @@ from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 import matplotlib.ticker as ticker
+import seaborn as sns
 
 def load_data():
     """
@@ -20,6 +21,14 @@ def load_data():
     wood = pd.read_csv("data/Exports Data Comb/RWood.csv_with_HDI.csv")
     return [cereals, inorganic, mineral, ores, wood]
 
+def load_pop_data():
+    cereals = pd.read_csv("data/Exports Per Capita/Cereals_capita.csv")
+    inorganic = pd.read_csv("data/Exports Per Capita/Inorganic_capita.csv")
+    mineral = pd.read_csv("data/Exports Per Capita/Mineral_capita.csv")
+    ores = pd.read_csv("data/Exports Per Capita/Ores_capita.csv")
+    wood = pd.read_csv("data/Exports Per Capita/Wood_capita.csv")
+    return [cereals, inorganic, mineral, ores, wood]
+
 def analyze_hdi_correlation(all_exports, labels):
     """
     Calculates and prints the correlation between 'dollar_value' and 'HDI_value'
@@ -33,7 +42,7 @@ def analyze_hdi_correlation(all_exports, labels):
     """
     correlation_df = pd.DataFrame(index=labels, columns=['HDI Correlation'])
     for data, label in zip(all_exports, labels):
-        correlation = data['dollar_value'].astype(float).corr(data['HDI_value'].astype(float))
+        correlation = data['dollar_per_capita'].astype(float).corr(data['HDI_value'].astype(float))
         correlation_df.loc[label, 'HDI Correlation'] = correlation
     print(correlation_df.iloc[:, 0])
 
@@ -45,11 +54,10 @@ def plot_scatter(df, title_suffix):
         df (pandas.DataFrame): The DataFrame to plot.
         title_suffix (str): A string to append to the plot titles.
     """
-
     plt.figure(figsize=(8, 6))
-    plt.scatter(df['dollar_value'], df['HDI_value'])
-    plt.title(f'Dollar_value vs HDI_value for {title_suffix}')
-    plt.xlabel('Dollar Value')
+    plt.scatter(df['dollar_per_capita'], df['HDI_value'])
+    plt.title(f'Exports Per Capita (Dollars) vs HDI for {title_suffix}')
+    plt.xlabel('Exports Per Capita (Dollars)')
     plt.ylabel('HDI Value')
     plt.show()
 
@@ -108,7 +116,31 @@ def perform_kmeans_clustering(df, features, n_clusters=3):
 
     return df_cleaned, kmeans.cluster_centers_
 
-def perform_nonlinear_regression(df, feature, target, model_func, p0=None, segments=None):
+def kmeans_visual(df, features, n_clusters):
+    df_cleaned = df.dropna(subset=features).copy()
+    X = df_cleaned[features]
+
+    kmeans = KMeans(n_clusters=n_clusters, random_state=0, n_init='auto')
+    df_cleaned['cluster'] = kmeans.fit_predict(X)
+    centroids = kmeans.cluster_centers_
+
+    print(f"\nK-Means Clustering Results for features {features} (n_clusters={n_clusters}):")
+    print("Cluster Centroids:")
+    print(centroids)
+
+    if len(features) != 2:
+        print("Plotting is only supported for 2D features.")
+        return
+
+    sns.scatterplot(data=df_cleaned, x=features[0], y=features[1], hue='cluster', palette='viridis', s=50)
+    plt.scatter(centroids[:, 0], centroids[:, 1], c='black', s=100, marker='x', label='Centroids')
+    plt.xlabel(features[0])
+    plt.ylabel(features[1])
+    plt.title(f"K-Means Clustering (k={n_clusters})")
+    plt.legend()
+    plt.tight_layout()
+
+def perform_nonlinear_regression(df, label, feature, target, model_func, p0=None, segments=None):
     """
     Performs non-linear regression using curve_fit and plots the results.
     Can fit multiple segments if 'segments' are provided.
@@ -134,7 +166,6 @@ def perform_nonlinear_regression(df, feature, target, model_func, p0=None, segme
     x_data_full = df_filtered[feature].values
     y_data_full = df_filtered[target].values
 
-    plt.figure(figsize=(10, 7)) # Only one figure for all regression plots
     plt.scatter(x_data_full, y_data_full, alpha=0.5, label="Data")
 
     if segments:
@@ -145,12 +176,10 @@ def perform_nonlinear_regression(df, feature, target, model_func, p0=None, segme
             start = segment_points[i]
             end = segment_points[i+1]
 
-            # Filter data for the current segment
             segment_df = df_filtered[(df_filtered[feature] >= start) & (df_filtered[feature] <= end)]
             x_segment = segment_df[feature].values
             y_segment = segment_df[target].values
 
-            # Ensure enough data points for fitting
             if len(x_segment) > (len(p0) if p0 is not None else 2):
                 try:
                     params, covariance = curve_fit(model_func, x_segment, y_segment, p0=p0, maxfev=5000)
@@ -169,7 +198,6 @@ def perform_nonlinear_regression(df, feature, target, model_func, p0=None, segme
             else:
                 print(f"Warning: Not enough data points for fitting in segment {i+1} ({start:.2e} to {end:.2e}).")
     else:
-        # Single fit for the entire dataset
         try:
             params, covariance = curve_fit(model_func, x_data_full, y_data_full, p0=p0, maxfev=5000)
             y_pred_full = model_func(x_data_full, *params)
@@ -187,12 +215,10 @@ def perform_nonlinear_regression(df, feature, target, model_func, p0=None, segme
     plt.gca().xaxis.set_major_locator(ticker.MultipleLocator(1e10))
     plt.xlabel(feature)
     plt.ylabel(target)
-    plt.title(f"Nonlinear Regression: {target} vs {feature} (Power Function Fit)")
+    plt.title(f"Nonlinear Regression: {target} vs {feature} for {label} (Power Function Fit)")
     plt.legend()
-    plt.grid(True) # Added grid for better readability
-    plt.show() # Only one plt.show() for the entire figure
+    plt.grid(True)
 
-# Define power function model
 def power_law(x, a, b):
     """
     Defines a power-law function for non-linear regression.
@@ -213,80 +239,58 @@ def power_law(x, a, b):
 
 if __name__ == "__main__":
     all_exports = load_data()
+    all_exports_capita = load_pop_data()
     labels = ['Cereals', 'Inorganic', 'Mineral', 'Ores', 'Wood']
 
     print("--- Head of each DataFrame ---")
-    for label, df in zip(labels, all_exports):
+    for label, df in zip(labels, all_exports_capita):
         print(f"\n{label} Data Head:")
         print(df.head())
 
     print("\n--- Size of each DataFrame ---")
-    for label, df in zip(labels, all_exports):
+    for label, df in zip(labels, all_exports_capita):
         print(f"{label} Size: {df.size}")
 
     print("\n--- Plotting and HDI Correlation ---")
-    histogram(all_exports[0]);
-    plot_scatter(all_exports[0], 'Cereals')
-    plot_scatter(all_exports[1], 'Inorganic')
-    plot_scatter(all_exports[2], 'Minerals')
-    plot_scatter(all_exports[3], 'Ores')
-    plot_scatter(all_exports[4], 'Wood')
+    # TODO: rewrite histogram for
+    histogram(all_exports_capita[0]);
+    # TODO: rewrite plot_scatter for
+    for export, label in zip(all_exports_capita, labels):
+        plot_scatter(export, label)
 
     print("\nHDI Correlation for each resource:")
-    analyze_hdi_correlation(all_exports, labels)
+    # TODO: rewrite analyze_hdi_correlation for
+    analyze_hdi_correlation(all_exports_capita, labels)
 
-    print("\n--- Performing K-Means Clustering ---")
-    mineral_df_clustered, mineral_centroids = perform_kmeans_clustering(
-        all_exports[2],
-        ['dollar_value', 'HDI_value'],
-        n_clusters=3
-    )
+    for i, export in enumerate(all_exports_capita):
+        plt.figure(i)
+        kmeans_visual(export, ['dollar_per_capita', 'HDI_value'], 5)
+    plt.show();
 
-    if not mineral_df_clustered.empty:
-        print("\nMineral DataFrame with Cluster Assignments (first 5 rows):")
-        print(mineral_df_clustered.head())
+    # print("\n--- Performing K-Means Clustering ---")
+    # mineral_df_clustered, mineral_centroids = perform_kmeans_clustering(
+    #     all_exports[2],
+    #     ['dollar_value', 'HDI_value'],
+    #     n_clusters=3
+    # )
+    #
+    # if not mineral_df_clustered.empty:
+    #     print("\nMineral DataFrame with Cluster Assignments (first 5 rows):")
+    #     print(mineral_df_clustered.head())
 
     print("\n--- Performing Non-linear Regression (Power Law) ---")
 
-    perform_nonlinear_regression(
-        all_exports[0],
-        'dollar_value',
-        'HDI_value',
-        model_func=power_law,
-        p0=[0.1, 0.1]
-    )
+    for i, (export, label) in enumerate(zip(all_exports_capita, labels)):
+        plt.figure(i)
+        perform_nonlinear_regression(
+            export, label,
+            'dollar_per_capita',
+            'HDI_value',
+            model_func=power_law,
+            p0=[0.1, 0.1]
+        )
 
-    perform_nonlinear_regression(
-        all_exports[1],
-        'dollar_value',
-        'HDI_value',
-        model_func=power_law,
-        p0=[0.1, 0.1]
-    )
-
-    perform_nonlinear_regression(
-        all_exports[2],
-        'dollar_value',
-        'HDI_value',
-        model_func=power_law,
-        p0=[0.1, 0.1]
-    )
-
-    perform_nonlinear_regression(
-        all_exports[3],
-        'dollar_value',
-        'HDI_value',
-        model_func=power_law,
-        p0=[0.1, 0.1]
-    )
-
-    perform_nonlinear_regression(
-        all_exports[4],
-        'dollar_value',
-        'HDI_value',
-        model_func=power_law,
-        p0=[0.1, 0.1]
-    )
+    plt.show();
 
     # with split functionality; currently, split functionality is x-income based
     # perform_nonlinear_regression(
