@@ -10,6 +10,9 @@ import project_1v2_0
 all_exports_capita = project_1v2_0.load_pop_data()
 labels = ['Cereals', 'Inorganic', 'Mineral', 'Ores', 'Wood']
 
+project_1v2_0.plot_scatter_3d(all_exports_capita[2], 'Mineral')
+project_1v2_0.all_plot_scatter_3d(all_exports_capita, labels)
+
 plt.figure()
 project_1v2_0.kmeans_visual(all_exports_capita[2], ['dollar_per_capita', 'HDI_value'], 5, labels[2])
 

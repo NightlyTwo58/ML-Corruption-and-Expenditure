@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D
 from scipy.optimize import curve_fit
 import matplotlib.ticker as ticker
 import seaborn as sns
@@ -63,6 +64,36 @@ def plot_scatter(df, title_suffix):
     plt.ylabel('HDI Value')
     plt.show()
 
+def plot_scatter_3d(df, title_suffix):
+    """
+    Generates a 3D scatter plot of 'dollar_per_capita' vs 'HDI_value' vs 'year'.
+
+    Args:
+        df (pandas.DataFrame): The DataFrame to plot. Expected to have
+                               'dollar_per_capita', 'HDI_value', and 'year' columns.
+        title_suffix (str): A string to append to the plot titles.
+    """
+    required_cols = ["dollar_per_capita", "HDI_value", "year"]
+    df_cleaned = df.dropna(subset=required_cols).copy()
+
+    fig = plt.figure(figsize=(10, 8))
+    ax = fig.add_subplot(111, projection='3d')
+
+    ax.scatter(df_cleaned['dollar_per_capita'],
+               df_cleaned['HDI_value'],
+               df_cleaned['year'],
+               c='blue',
+               alpha=0.7,
+               edgecolors='k')
+
+    ax.set_xlabel('Exports Per Capita (Dollars)')
+    ax.set_ylabel('HDI Value')
+    ax.set_zlabel('Year')
+
+    ax.set_title(f'3D Scatter Plot: Exports Per Capita vs HDI vs Year for {title_suffix}')
+
+    plt.tight_layout()
+    plt.show()
 
 def all_plot_scatter(df, labels):
     """
@@ -89,6 +120,52 @@ def all_plot_scatter(df, labels):
     plt.title("Scatter Plot of Different Resource Types")
     plt.legend()
     plt.grid(True)
+    plt.show()
+
+def all_plot_scatter_3d(list_of_dfs, labels):
+    """
+    Generates a 3D scatter plot of 'dollar_per_capita' vs 'HDI_value' vs 'year'
+    for multiple DataFrames.
+
+    Args:
+        list_of_dfs (list): A list of pandas.DataFrames, where each DataFrame
+                            represents a different resource type. Each DataFrame
+                            is expected to have 'dollar_per_capita', 'HDI_value',
+                            and 'year' columns.
+        labels (list): A list of strings, where each string is the name
+                       corresponding to a DataFrame in list_of_dfs.
+    """
+    if not isinstance(list_of_dfs, list) or not all(isinstance(d, pd.DataFrame) for d in list_of_dfs):
+        raise TypeError("list_of_dfs must be a list of pandas DataFrames.")
+    if not isinstance(labels, list) or not all(isinstance(l, str) for l in labels):
+        raise TypeError("labels must be a list of strings.")
+    if len(list_of_dfs) != len(labels):
+        raise ValueError("The number of DataFrames and labels must be the same.")
+
+    colors = ['red', 'blue', 'green', 'purple', 'orange', 'cyan', 'magenta', 'yellow', 'black', 'gray']
+
+    fig = plt.figure(figsize=(12, 10), dpi=100)
+    ax = fig.add_subplot(111, projection='3d')
+
+    for i, data_df in enumerate(list_of_dfs):
+        color = colors[i % len(colors)]
+        label = labels[i]
+
+        required_cols = ["dollar_per_capita", "HDI_value", "year"]
+        data_cleaned = data_df.dropna(subset=required_cols).copy()
+
+        ax.scatter(data_cleaned["dollar_per_capita"],
+                   data_cleaned["HDI_value"],
+                   data_cleaned["year"],
+                   c=color, label=label, alpha=0.7, edgecolors='k')
+
+    ax.set_xlabel("Export Amount (Dollars) Per Capita")
+    ax.set_ylabel("HDI Value")
+    ax.set_zlabel("Year")
+
+    ax.set_title("3D Scatter Plot of Different Resource Types")
+    ax.legend()
+    plt.tight_layout()
     plt.show()
 
 
