@@ -6,6 +6,12 @@ This project investigates the complex relationship between natural resource expo
 
 We specifically focus on the export of cereal, oil, lumber, rare earth metals, and ores from countries worldwide during the period 2010-2020. The Human Development Index (HDI) serves as our primary metric, a composite index encompassing life expectancy, education, and standard of living.
 
+![My awesome screenshot](data/Mineral Oil/all_scatter_3D.png)
+![My awesome screenshot](data/Mineral Oil/mineral_kmeans_2D.png)
+
+Future plans for futher segmentation / clustering call for 2 nonlinear regression trends across 2 clusters to more concretely define patterns (in progress).
+![Future Plans](data/Mineral Oil/nonlinear_plan.png)
+
 ## Key Features
 
 * **Comprehensive Data Analysis:** Utilizes data from UN Comtrade and UNDP's HDI database for a robust analysis.
