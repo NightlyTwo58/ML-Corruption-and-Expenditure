@@ -5,6 +5,8 @@ import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 import matplotlib.ticker as ticker
 import seaborn as sns
+from sklearn.preprocessing import MinMaxScaler
+
 
 def load_data():
     """
@@ -61,6 +63,35 @@ def plot_scatter(df, title_suffix):
     plt.ylabel('HDI Value')
     plt.show()
 
+
+def all_plot_scatter(df, labels):
+    """
+    Generates a scatter plot of 'dollar_value' vs 'HDI_value' for multiple DataFrames.
+
+    Args:
+        df (list): A list of pandas.DataFrames, where each DataFrame
+                            represents a different resource type.
+        labels (list): A list of strings, where each string is the name
+                       corresponding to a DataFrame in list_of_dfs.
+    """
+    colors = ['red', 'blue', 'green', 'purple', 'orange', 'cyan', 'magenta', 'yellow', 'black', 'gray']
+
+    plt.figure(figsize=(12, 6), dpi=100)
+
+    for i, data_df in enumerate(df):
+        label = labels[i]
+        data_df = data_df.dropna()
+        plt.scatter(data_df["dollar_per_capita"], data_df["HDI_value"],
+                    c=colors[i], label=label, alpha=0.7, edgecolors='k')
+
+    plt.xlabel("Export Amount (Dollars) Per Capita")
+    plt.ylabel("HDI Value")
+    plt.title("Scatter Plot of Different Resource Types")
+    plt.legend()
+    plt.grid(True)
+    plt.show()
+
+
 def histogram(df):
     """
     Generates a bar chart of the yearly average 'HDI_value' for a given DataFrame.
@@ -115,29 +146,44 @@ def perform_kmeans_clustering(df, features, n_clusters=3):
 
     return df_cleaned, kmeans.cluster_centers_
 
-def kmeans_visual(df, features, n_clusters):
+
+def kmeans_visual(df, features, n_clusters, name):
+    """
+    Performs K-Means clustering on specified features with Min-Max scaling,
+    and visualizes the clusters and centroids.
+
+    Args:
+        df (pd.DataFrame): The input DataFrame.
+        features (list): A list of two strings, representing the X and Y feature names
+                         to be used for clustering and plotting.
+        n_clusters (int): The number of clusters for K-Means.
+        name {str): name of the export graphed
+    """
     df_cleaned = df.dropna(subset=features).copy()
-    X = df_cleaned[features]
+
+    X_original = df_cleaned[features]
+
+    scaler = MinMaxScaler()
+    X_scaled = pd.DataFrame(scaler.fit_transform(X_original), columns=features, index=X_original.index)
 
     kmeans = KMeans(n_clusters=n_clusters, random_state=0, n_init='auto')
-    df_cleaned['cluster'] = kmeans.fit_predict(X)
-    centroids = kmeans.cluster_centers_
+    df_cleaned['cluster'] = kmeans.fit_predict(X_scaled)
 
-    print(f"\nK-Means Clustering Results for features {features} (n_clusters={n_clusters}):")
-    print("Cluster Centroids:")
-    print(centroids)
-
-    if len(features) != 2:
-        print("Plotting is only supported for 2D features.")
-        return
+    centroids_scaled = kmeans.cluster_centers_
+    centroids_original_scale = scaler.inverse_transform(centroids_scaled)
 
     sns.scatterplot(data=df_cleaned, x=features[0], y=features[1], hue='cluster', palette='viridis', s=50)
-    plt.scatter(centroids[:, 0], centroids[:, 1], c='black', s=100, marker='x', label='Centroids')
-    plt.xlabel(features[0])
-    plt.ylabel(features[1])
-    plt.title(f"K-Means Clustering (k={n_clusters})")
+
+    plt.scatter(centroids_original_scale[:, 0], centroids_original_scale[:, 1],
+                c='black', s=100, marker='x', label='Centroids')
+
+    plt.xlabel(f"{features[0]} (Scaled for Clustering)")
+    plt.ylabel(f"{features[1]} (Scaled for Clustering)")
+    plt.title(f"K-Means Clustering for {name} (k={n_clusters}) with Min-Max Scaling")
     plt.legend()
+    plt.grid(True)
     plt.tight_layout()
+    plt.show()
 
 def perform_nonlinear_regression(df, label, feature, target, model_func, p0=None, segments=None):
     """
@@ -251,19 +297,19 @@ if __name__ == "__main__":
         print(f"{label} Size: {df.size}")
 
     print("\n--- Plotting and HDI Correlation ---")
-    # TODO: rewrite histogram for
     histogram(all_exports_capita[0])
-    # TODO: rewrite plot_scatter for
+
+    all_plot_scatter(all_exports_capita, labels)
+
     for export, label in zip(all_exports_capita, labels):
         plot_scatter(export, label)
 
     print("\nHDI Correlation for each resource:")
-    # TODO: rewrite analyze_hdi_correlation for
     analyze_hdi_correlation(all_exports_capita, labels)
 
     for i, export in enumerate(all_exports_capita):
         plt.figure(i)
-        kmeans_visual(export, ['dollar_per_capita', 'HDI_value'], 5)
+        kmeans_visual(export, ['dollar_per_capita', 'HDI_value'], 5, labels[i])
     plt.show()
 
     # print("\n--- Performing K-Means Clustering ---")
