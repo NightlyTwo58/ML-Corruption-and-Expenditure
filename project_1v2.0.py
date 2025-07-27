@@ -61,6 +61,35 @@ def plot_scatter(df, title_suffix):
     plt.ylabel('HDI Value')
     plt.show()
 
+
+def all_plot_scatter(df, labels):
+    """
+    Generates a scatter plot of 'dollar_value' vs 'HDI_value' for multiple DataFrames.
+
+    Args:
+        df (list): A list of pandas.DataFrames, where each DataFrame
+                            represents a different resource type.
+        labels (list): A list of strings, where each string is the name
+                       corresponding to a DataFrame in list_of_dfs.
+    """
+    colors = ['red', 'blue', 'green', 'purple', 'orange', 'cyan', 'magenta', 'yellow', 'black', 'gray']
+
+    plt.figure(figsize=(12, 6), dpi=100)
+
+    for i, data_df in enumerate(df):
+        label = labels[i]
+        data_df = data_df.dropna()
+        plt.scatter(data_df["dollar_per_capita"], data_df["HDI_value"],
+                    c=colors[i], label=label, alpha=0.7, edgecolors='k')
+
+    plt.xlabel("Export Amount (Dollars) Per Capita")
+    plt.ylabel("HDI Value")
+    plt.title("Scatter Plot of Different Resource Types")
+    plt.legend()
+    plt.grid(True)
+    plt.show()
+
+
 def histogram(df):
     """
     Generates a bar chart of the yearly average 'HDI_value' for a given DataFrame.
@@ -251,14 +280,14 @@ if __name__ == "__main__":
         print(f"{label} Size: {df.size}")
 
     print("\n--- Plotting and HDI Correlation ---")
-    # TODO: rewrite histogram for
     histogram(all_exports_capita[0])
-    # TODO: rewrite plot_scatter for
+
+    all_plot_scatter(all_exports_capita, labels)
+
     for export, label in zip(all_exports_capita, labels):
         plot_scatter(export, label)
 
     print("\nHDI Correlation for each resource:")
-    # TODO: rewrite analyze_hdi_correlation for
     analyze_hdi_correlation(all_exports_capita, labels)
 
     for i, export in enumerate(all_exports_capita):
