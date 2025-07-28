@@ -191,37 +191,35 @@ def histogram(df):
     plt.tight_layout()
     plt.show()
 
-def perform_kmeans_clustering(df, features, n_clusters=3):
+def perform_kmeans_clustering(df, features, n_clusters):
     """
-    Performs K-Means clustering on the specified features of a DataFrame,
-    handles NaNs by dropping rows, and prints cluster centroids.
+    Performs K-Means clustering on the given DataFrame and features after Min-Max scaling.
 
     Args:
-        df (pandas.DataFrame): The DataFrame to perform clustering on.
-        features (list): A list of column names to be used for clustering.
+        df (pandas.DataFrame): The input DataFrame.
+        features (list): A list of feature (column) names to use for clustering.
+                         Expected to be 2 features for typical 2D visualization contexts.
         n_clusters (int): The number of clusters to form.
 
     Returns:
         tuple: A tuple containing:
-            - pandas.DataFrame: The DataFrame with a new 'cluster' column.
-            - numpy.ndarray: The cluster centroids.
+            - pandas.DataFrame: The original DataFrame (cleaned of NaNs in features)
+                                with a new 'cluster' column indicating assignment.
+            - numpy.ndarray: The cluster centroids in the original (unscaled) feature space.
     """
-    df_cleaned = df.dropna(subset=features)
+    df_cleaned = df.dropna(subset=features).copy()
 
-    if df_cleaned.empty:
-        print(f"Warning: No valid data points for clustering in this DataFrame after dropping NaNs for features: {features}")
-        return pd.DataFrame(), np.array([])
-
-    X = df_cleaned[features]
+    scaler = MinMaxScaler()
+    X_original = df_cleaned[features]
+    X_scaled = pd.DataFrame(scaler.fit_transform(X_original), columns=features, index=X_original.index)
 
     kmeans = KMeans(n_clusters=n_clusters, random_state=0, n_init='auto')
-    df_cleaned['cluster'] = kmeans.fit_predict(X)
+    df_cleaned['cluster'] = kmeans.fit_predict(X_scaled)  # Assign clusters to the cleaned DataFrame
 
-    print(f"\nK-Means Clustering Results for features {features} (n_clusters={n_clusters}):")
-    print("Cluster Centroids:")
-    print(kmeans.cluster_centers_)
+    centroids_scaled = kmeans.cluster_centers_
+    centroids_original_scale = scaler.inverse_transform(centroids_scaled)
 
-    return df_cleaned, kmeans.cluster_centers_
+    return df_cleaned, centroids_original_scale
 
 
 def kmeans_visual(df, features, n_clusters, name):
@@ -393,7 +391,7 @@ if __name__ == "__main__":
     # mineral_df_clustered, mineral_centroids = perform_kmeans_clustering(
     #     all_exports[2],
     #     ['dollar_value', 'HDI_value'],
-    #     n_clusters=3
+    #     4
     # )
     #
     # if not mineral_df_clustered.empty:
