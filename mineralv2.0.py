@@ -27,7 +27,6 @@ labels = ['Cereals', 'Inorganic', 'Mineral', 'Ores', 'Wood']
 # plt.show()
 
 
-# TODO: remove outliers
 def remove_minoutliers(df, minchar, min_value):
     """
     Removes rows from a DataFrame where the value in a specified column
@@ -76,8 +75,6 @@ def remove_maxoutliers(df, maxchar, max_value):
 
     return df
 
-# TODO: plot linear regression line for baseline
-# TODO: remove curse cluster from dataset;
 def filter_df_by_cluster(df, features, n_clusters, cluster_id_to_remove):
     """
     Performs K-Means clustering on the DataFrame and then returns a new DataFrame
@@ -97,7 +94,6 @@ def filter_df_by_cluster(df, features, n_clusters, cluster_id_to_remove):
     df_filtered = df_clustered[df_clustered['cluster'] != cluster_id_to_remove].copy()
     df_final = df_filtered.drop(columns=['cluster'])
     return df_final
-# TODO: then apply nonlin regression
 
 
 mineral_mincap = remove_minoutliers(all_exports_capita[2], "dollar_per_capita", 1000)
@@ -123,7 +119,7 @@ project_1v2_0.perform_nonlinear_regression(
             model_func=project_1v2_0.power_law,
             p0=[0.1, 0.1]
         )
-# project_1v2_0.perform_linear_regression(mineral_cap, labels[2], 'dollar_per_capita', 'HDI_value')
+project_1v2_0.perform_linear_regression(cluster23data.drop(columns='cluster'), labels[2], ['dollar_per_capita', 'HDI_value'], 0.1)
 project_1v2_0.kmeans_display(cluster0data, ['dollar_per_capita', 'HDI_value'], 5, labels[2], 3)
 
 

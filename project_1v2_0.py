@@ -310,48 +310,54 @@ def kmeans_visual(df, features, n_clusters, name, y_scalar):
     plt.tight_layout()
     plt.show()
 
-from sklearn.preprocessing import StandardScaler
-from scipy.stats import linregress
-import matplotlib.pyplot as plt
-import numpy as np
-
-def perform_linear_regression(df, label, feature, target):
+def perform_linear_regression(df, label, features, y_scalar):
     """
-    Performs simple linear regression on equally scaled features and plots the results.
+    Performs linear regression with optional y-axis scaling and plots the result
+    in original data coordinates to align with k-means and nonlinear plots.
 
     Args:
-        df (pandas.DataFrame): The input DataFrame.
-        label (str): A label for the plot title.
-        feature (str): The independent variable (x-axis).
-        target (str): The dependent variable (y-axis).
+        df (pandas.DataFrame): The DataFrame containing the data.
+        label (str): Title/label for the plot.
+        features (list[str]): [x_feature, y_feature].
+        y_scalar (float): Relative scaling factor applied to the y-feature before fitting
+                          (e.g., 0.5 to de-emphasize y-feature in regression).
     """
-    df_filtered = df[[feature, target]].dropna()
+    x_feature, y_feature = features
+    df_filtered = df[[x_feature, y_feature]].dropna()
 
-    # Extract values and stack as Nx2 array
-    data = df_filtered[[feature, target]].values
+    if df_filtered.empty:
+        print(f"Warning: No valid data points for linear regression after dropping NaNs for {x_feature} and {y_feature}.")
+        return
 
-    # Scale both columns jointly (same transformation)
-    scaler = MinMaxScaler()
-    data_scaled = scaler.fit_transform(data)
-    x_scaled = data_scaled[:, 0]
-    y_scaled = data_scaled[:, 1]
+    scaler_x = MinMaxScaler()
+    scaler_y = MinMaxScaler()
 
-    # Linear regression on scaled data
-    slope, intercept, r_value, p_value, std_err = linregress(x_scaled, y_scaled)
-    y_pred = slope * x_scaled + intercept
+    x_scaled = scaler_x.fit_transform(df_filtered[[x_feature]])
+    y_scaled = scaler_y.fit_transform(df_filtered[[y_feature]]) * y_scalar
 
-    # Plot scaled data and fit
-    plt.scatter(x_scaled, y_scaled, alpha=0.5, label="Scaled Data")
-    plt.plot(x_scaled, y_pred, color='red', label=f"Linear Fit (R²={r_value**2:.4f})")
+    x_flat = x_scaled.flatten()
+    y_flat = y_scaled.flatten()
 
-    plt.xlabel(f"Scaled {feature}")
-    plt.ylabel(f"Scaled {target}")
-    plt.title(f"Linear Regression (Joint Scaled): {target} vs {feature} for {label}")
+    slope, intercept, r_value, p_value, std_err = linregress(x_flat, y_flat)
+    y_pred_scaled = slope * x_flat + intercept
+
+    x_original = df_filtered[x_feature].values.reshape(-1, 1)
+    y_pred_unscaled = scaler_y.inverse_transform((y_pred_scaled / y_scalar).reshape(-1, 1)).flatten()
+
+    plt.scatter(df_filtered[x_feature], df_filtered[y_feature], alpha=0.5, label="Scaled Data")
+
+    plt.plot(df_filtered[x_feature], y_pred_unscaled, color='red',
+             label=f"Linear Fit (R²={r_value**2:.4f})")
+
+    plt.gca().xaxis.set_major_locator(ticker.MaxNLocator(integer=True))
+    plt.xlabel(x_feature)
+    plt.ylabel(y_feature)
+    plt.title(f"Linear Regression: {y_feature} vs {x_feature} for {label}\n(Scaled {x_feature}:1, {y_feature}:{y_scalar})")
     plt.legend()
     plt.grid(True)
     plt.tight_layout()
 
-    print(f"Slope: {slope:.4f}, Intercept: {intercept:.4f}, R²: {r_value**2:.4f}")
+    print(f"\nLinear Fit Parameters: slope={slope:.4f}, intercept={intercept:.4f}, R-squared={r_value**2:.4f}")
 
 
 def perform_nonlinear_regression(df, label, feature, target, model_func, p0=None, segments=None):
