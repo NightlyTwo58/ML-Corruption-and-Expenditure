@@ -4,6 +4,7 @@ from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 from scipy.optimize import curve_fit
+from scipy.stats import linregress
 import matplotlib.ticker as ticker
 import seaborn as sns
 from sklearn.preprocessing import MinMaxScaler
@@ -191,7 +192,7 @@ def histogram(df):
     plt.tight_layout()
     plt.show()
 
-def perform_kmeans_clustering(df, features, n_clusters):
+def perform_kmeans_clustering_auto(df, features, n_clusters):
     """
     Performs K-Means clustering on the given DataFrame and features after Min-Max scaling.
 
@@ -222,7 +223,48 @@ def perform_kmeans_clustering(df, features, n_clusters):
     return df_cleaned, centroids_original_scale
 
 
-def kmeans_visual(df, features, n_clusters, name):
+def perform_kmeans_clustering(df, features, n_clusters, y_scalar):
+    """
+    Performs K-Means clustering on the given DataFrame using scaled features with an adjustable y-axis scaling factor,
+    and returns the cleaned DataFrame with a new 'cluster' column.
+
+    Args:
+        df (pandas.DataFrame): The input DataFrame.
+        features (list): A list of two feature names [x, y] to use for clustering.
+        n_clusters (int): The number of clusters to form.
+        y_scalar (float): Factor to scale the y-feature relative to x-feature for clustering sensitivity.
+
+    Returns:
+        pandas.DataFrame: The cleaned DataFrame with a new 'cluster' column added.
+    """
+    df_cleaned = df.dropna(subset=features).copy()
+    X_original = df_cleaned[features]
+
+    scaler_x = MinMaxScaler()
+    scaler_y = MinMaxScaler()
+
+    x_scaled = scaler_x.fit_transform(X_original[[features[0]]])
+    y_scaled = scaler_y.fit_transform(X_original[[features[1]]]) * y_scalar
+
+    X_scaled_custom = np.hstack((x_scaled, y_scaled))
+
+    kmeans = KMeans(n_clusters=n_clusters, random_state=0, n_init='auto')
+    df_cleaned['cluster'] = kmeans.fit_predict(X_scaled_custom)
+
+    return df_cleaned
+
+def kmeans_display(df, features, n_clusters, name, y_scalar):
+    sns.scatterplot(data=df, x=features[0], y=features[1], hue='cluster', palette='viridis', s=50)
+
+    plt.xlabel(features[0])
+    plt.ylabel(features[1])
+    plt.title(f"K-Means Clustering for {name} (k={n_clusters}) with 1:{y_scalar} Scaled Clustering")
+    plt.legend()
+    plt.grid(True)
+    plt.tight_layout()
+    plt.show()
+
+def kmeans_visual(df, features, n_clusters, name, y_scalar):
     """
     Performs K-Means clustering on specified features with Min-Max scaling,
     and visualizes the clusters and centroids.
@@ -233,32 +275,84 @@ def kmeans_visual(df, features, n_clusters, name):
                          to be used for clustering and plotting.
         n_clusters (int): The number of clusters for K-Means.
         name {str): name of the export graphed
+        y_scalar (int): the ratio of y-scaling (of HDI) to x. For example, 2 means clustering is twice as sensitive to HDI than exports.
     """
     df_cleaned = df.dropna(subset=features).copy()
 
     X_original = df_cleaned[features]
+    scaler_x = MinMaxScaler()
+    scaler_y = MinMaxScaler()
 
-    scaler = MinMaxScaler()
-    X_scaled = pd.DataFrame(scaler.fit_transform(X_original), columns=features, index=X_original.index)
+    x_scaled = scaler_x.fit_transform(X_original[[features[0]]])
+    y_scaled = scaler_y.fit_transform(X_original[[features[1]]]) * y_scalar
+
+    X_scaled_custom = np.hstack((x_scaled, y_scaled))
 
     kmeans = KMeans(n_clusters=n_clusters, random_state=0, n_init='auto')
-    df_cleaned['cluster'] = kmeans.fit_predict(X_scaled)
+    df_cleaned['cluster'] = kmeans.fit_predict(X_scaled_custom)
 
     centroids_scaled = kmeans.cluster_centers_
-    centroids_original_scale = scaler.inverse_transform(centroids_scaled)
+
+    centroids_x = scaler_x.inverse_transform(centroids_scaled[:, [0]])
+    centroids_y = scaler_y.inverse_transform(centroids_scaled[:, [1]] / y_scalar)
+    centroids_original = np.hstack((centroids_x, centroids_y))
 
     sns.scatterplot(data=df_cleaned, x=features[0], y=features[1], hue='cluster', palette='viridis', s=50)
 
-    plt.scatter(centroids_original_scale[:, 0], centroids_original_scale[:, 1],
+    plt.scatter(centroids_original[:, 0], centroids_original[:, 1],
                 c='black', s=100, marker='x', label='Centroids')
 
-    plt.xlabel(f"{features[0]} (Scaled for Clustering)")
-    plt.ylabel(f"{features[1]} (Scaled for Clustering)")
-    plt.title(f"K-Means Clustering for {name} (k={n_clusters}) with Min-Max Scaling")
+    plt.xlabel(features[0])
+    plt.ylabel(features[1])
+    plt.title(f"K-Means Clustering for {name} (k={n_clusters}) with 1:{y_scalar} Scaled Clustering")
     plt.legend()
     plt.grid(True)
     plt.tight_layout()
     plt.show()
+
+from sklearn.preprocessing import StandardScaler
+from scipy.stats import linregress
+import matplotlib.pyplot as plt
+import numpy as np
+
+def perform_linear_regression(df, label, feature, target):
+    """
+    Performs simple linear regression on equally scaled features and plots the results.
+
+    Args:
+        df (pandas.DataFrame): The input DataFrame.
+        label (str): A label for the plot title.
+        feature (str): The independent variable (x-axis).
+        target (str): The dependent variable (y-axis).
+    """
+    df_filtered = df[[feature, target]].dropna()
+
+    # Extract values and stack as Nx2 array
+    data = df_filtered[[feature, target]].values
+
+    # Scale both columns jointly (same transformation)
+    scaler = MinMaxScaler()
+    data_scaled = scaler.fit_transform(data)
+    x_scaled = data_scaled[:, 0]
+    y_scaled = data_scaled[:, 1]
+
+    # Linear regression on scaled data
+    slope, intercept, r_value, p_value, std_err = linregress(x_scaled, y_scaled)
+    y_pred = slope * x_scaled + intercept
+
+    # Plot scaled data and fit
+    plt.scatter(x_scaled, y_scaled, alpha=0.5, label="Scaled Data")
+    plt.plot(x_scaled, y_pred, color='red', label=f"Linear Fit (R²={r_value**2:.4f})")
+
+    plt.xlabel(f"Scaled {feature}")
+    plt.ylabel(f"Scaled {target}")
+    plt.title(f"Linear Regression (Joint Scaled): {target} vs {feature} for {label}")
+    plt.legend()
+    plt.grid(True)
+    plt.tight_layout()
+
+    print(f"Slope: {slope:.4f}, Intercept: {intercept:.4f}, R²: {r_value**2:.4f}")
+
 
 def perform_nonlinear_regression(df, label, feature, target, model_func, p0=None, segments=None):
     """
@@ -384,19 +478,8 @@ if __name__ == "__main__":
 
     for i, export in enumerate(all_exports_capita):
         plt.figure(i)
-        kmeans_visual(export, ['dollar_per_capita', 'HDI_value'], 5, labels[i])
+        kmeans_visual(export, ['dollar_per_capita', 'HDI_value'], 5, labels[i], 2)
     plt.show()
-
-    # print("\n--- Performing K-Means Clustering ---")
-    # mineral_df_clustered, mineral_centroids = perform_kmeans_clustering(
-    #     all_exports[2],
-    #     ['dollar_value', 'HDI_value'],
-    #     4
-    # )
-    #
-    # if not mineral_df_clustered.empty:
-    #     print("\nMineral DataFrame with Cluster Assignments (first 5 rows):")
-    #     print(mineral_df_clustered.head())
 
     print("\n--- Performing Non-linear Regression (Power Law) ---")
 
