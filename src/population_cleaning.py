@@ -1,9 +1,7 @@
 import numpy as np
 import pandas as pd
-from sklearn.cluster import KMeans
-import matplotlib.pyplot as plt
-from scipy.optimize import curve_fit
-import matplotlib.ticker as ticker
+
+# this program used for appending population from data/population_data.csv into every export/HDI .csv inside data/Exports Data Comb
 
 def load_data():
     """
