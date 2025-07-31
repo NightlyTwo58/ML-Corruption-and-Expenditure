@@ -6,6 +6,12 @@ This project investigates the complex relationship between natural resource expo
 
 We specifically focus on the export of cereal, oil, lumber, rare earth metals, and ores from countries worldwide during the period 2010-2020. The Human Development Index (HDI) serves as our primary metric, a composite index encompassing life expectancy, education, and standard of living.
 
+![My awesome screenshot](images/new/all_scatter_3D.png)
+![My awesome screenshot](images/new/Mineral Oil/mineral_kmeans_2D.png)
+
+Future plans for futher segmentation / clustering call for 2 nonlinear regression trends across 2 clusters to more concretely define patterns (in progress).
+![Future Plans](images/new/Mineral Oil/nonlinear_plan.png)
+
 ## Key Features
 
 * **Comprehensive Data Analysis:** Utilizes data from UN Comtrade and UNDP's HDI database for a robust analysis.
@@ -70,17 +76,19 @@ The datasets used in this project are publicly available:
 
 P1/
 ├── data/
-│   ├── raw/                  # Raw downloaded datasets (e.g., Comtrade CSVs, HDI CSV)
-│   └── processed/            # Processed and merged data files
-├── notebooks/                # Jupyter notebooks for exploratory data analysis and specific analyses
-├── src/                      # Python source code
-│   ├── data_processing.py    # Scripts for cleaning, merging, and preparing data
-│   ├── analysis.py           # Scripts for linear regression, clustering, nonlinear regression
-│   └── visualization.py      # Scripts for generating plots
-├── outputs/                  # Generated plots, tables, and clustering CSVs
-├── .gitignore                # Specifies intentionally untracked files to ignore
-├── README.md                 # This README file
-└── requirements.txt          # List of project dependencies
+│   ├── Exports Data Comb/         # Data related to exports combinations
+│   ├── Exports Per Capita/        # Data related to exports per capita
+│   ├── Exports Pop Comb/          # Data related to exports and population combinations
+│   └── Mineral Oil/               # Specific datasets for mineral oil analysis
+├── images/                        # Generated plots and visualization images
+├── venv/                          # Python virtual environment (library root)
+├── .gitignore                     # Specifies intentionally untracked files to ignore
+├── mineralv2.0.py                 # Main script for mineral analysis (e.g., clustering/regression)
+├── population_cleaning.py         # Script for cleaning population data
+├── project_1v1.0.ipynb            # Jupyter notebook for project version 1.1
+├── project_1v2_0.py               # Script for project version 1.2
+├── README.md                      # This README file
+└── requirements.txt               # List of project dependencies
 
 
 ## Usage
