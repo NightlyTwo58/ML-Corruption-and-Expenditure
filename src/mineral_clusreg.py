@@ -8,6 +8,7 @@ maxfilter = 50000
 yscalar = 3
 all_exports_capita[2] = project_1v2_0.remove_outliers(all_exports_capita[2], "dollar_per_capita", minfilter, maxfilter)
 clusterdata = project_1v2_0.perform_kmeans_clustering(all_exports_capita[2], ['dollar_per_capita', 'HDI_value'], 5, yscalar)
+clusterdata.to_csv('clustering_results/mineral.csv', index=False)
 
 project_1v2_0.combined_regression_clustering(
     [minfilter, maxfilter, yscalar],
