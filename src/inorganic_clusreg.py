@@ -7,6 +7,7 @@ maxfilter = None
 yscalar = 2
 all_exports_capita[1] = project_1v2_0.remove_outliers(all_exports_capita[1], "dollar_per_capita", minfilter, maxfilter)
 clusterdata = project_1v2_0.perform_kmeans_clustering(all_exports_capita[1], ['dollar_per_capita', 'HDI_value'], 5, yscalar)
+clusterdata.to_csv('clustering_results/inorganic.csv', index=False)
 
 project_1v2_0.combined_regression_clustering(
     [minfilter, maxfilter, yscalar],

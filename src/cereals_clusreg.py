@@ -8,6 +8,7 @@ maxfilter = 400
 yscalar = 1
 resource = project_1v2_0.remove_outliers(resource, "dollar_per_capita", minfilter, maxfilter)
 clusterdata = project_1v2_0.perform_kmeans_clustering(resource, ['dollar_per_capita', 'HDI_value'], 4, yscalar)
+clusterdata.to_csv('clustering_results/cereals.csv', index=False)
 
 project_1v2_0.combined_regression_clustering_linear(
     [minfilter, maxfilter, yscalar],
