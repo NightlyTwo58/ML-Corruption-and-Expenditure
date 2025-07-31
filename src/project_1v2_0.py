@@ -7,7 +7,9 @@ from scipy.optimize import curve_fit
 from scipy.stats import linregress
 import matplotlib.ticker as ticker
 import seaborn as sns
+from sklearn.metrics import r2_score
 from sklearn.preprocessing import MinMaxScaler
+from sklearn.linear_model import LinearRegression
 
 
 def load_data():
@@ -18,19 +20,19 @@ def load_data():
         list: A list containing pandas DataFrames for cereals, inorganic,
               mineral, ores, and wood exports.
     """
-    cereals = pd.read_csv("data/Exports Data Comb/RCereals.csv_with_HDI.csv")
-    inorganic = pd.read_csv("data/Exports Data Comb/RInorganic.csv_with_HDI.csv")
-    mineral = pd.read_csv("data/Exports Data Comb/RMineral.csv_with_HDI.csv")
-    ores = pd.read_csv("data/Exports Data Comb/ROres.csv_with_HDI.csv")
-    wood = pd.read_csv("data/Exports Data Comb/RWood.csv_with_HDI.csv")
+    cereals = pd.read_csv("../data/Exports Data Comb/RCereals.csv_with_HDI.csv")
+    inorganic = pd.read_csv("../data/Exports Data Comb/RInorganic.csv_with_HDI.csv")
+    mineral = pd.read_csv("../data/Exports Data Comb/RMineral.csv_with_HDI.csv")
+    ores = pd.read_csv("../data/Exports Data Comb/ROres.csv_with_HDI.csv")
+    wood = pd.read_csv("../data/Exports Data Comb/RWood.csv_with_HDI.csv")
     return [cereals, inorganic, mineral, ores, wood]
 
 def load_pop_data():
-    cereals = pd.read_csv("data/Exports Per Capita/Cereals_capita.csv")
-    inorganic = pd.read_csv("data/Exports Per Capita/Inorganic_capita.csv")
-    mineral = pd.read_csv("data/Exports Per Capita/Mineral_capita.csv")
-    ores = pd.read_csv("data/Exports Per Capita/Ores_capita.csv")
-    wood = pd.read_csv("data/Exports Per Capita/Wood_capita.csv")
+    cereals = pd.read_csv("../data/Exports Per Capita/Cereals_capita.csv")
+    inorganic = pd.read_csv("../data/Exports Per Capita/Inorganic_capita.csv")
+    mineral = pd.read_csv("../data/Exports Per Capita/Mineral_capita.csv")
+    ores = pd.read_csv("../data/Exports Per Capita/Ores_capita.csv")
+    wood = pd.read_csv("../data/Exports Per Capita/Wood_capita.csv")
     return [cereals, inorganic, mineral, ores, wood]
 
 def analyze_hdi_correlation(all_exports, labels):
@@ -439,6 +441,153 @@ def perform_nonlinear_regression(df, label, feature, target, model_func, p0=None
     plt.legend()
     plt.grid(True)
 
+def combined_regression_clustering(filteringBounds, name, full_clustered_df,
+                                      cluster_filtered_dfs,
+                                      xcol, ycol,
+                                      model_func,
+                                      p0,
+                                      figsize=(8,5)):
+    """
+    full_clustered_df: DataFrame including 'cluster' column (the original KMeans result)
+    cluster_filtered_dfs: list of tuples: (df_after_removal_with_no_cluster_col, removed_clusters_list, fit_color)
+    """
+    n_clusters = int(full_clustered_df['cluster'].max() + 1)
+    palette = sns.color_palette("tab10", n_colors=n_clusters)
+
+    fig, ax = plt.subplots(figsize=figsize)
+
+    for ci in range(n_clusters):
+        subset = full_clustered_df[full_clustered_df['cluster'] == ci]
+        if subset.empty:
+            continue
+        x = subset[xcol].to_numpy()
+        y = subset[ycol].to_numpy()
+        ax.scatter(x, y, label=f"Cluster {ci}", alpha=0.6, edgecolors='none', s=40,
+                   color=palette[ci])
+
+    # Fit overlays: for each filtered dataset (which has had some clusters removed),
+    # fit and draw the nonlinear curve, annotate R^2 and removed clusters.
+    for df_filtered, removed_clusters, fit_color in cluster_filtered_dfs:
+        df_filtered = df_filtered[~df_filtered['cluster'].isin(removed_clusters)].drop(columns='cluster')
+
+        x = df_filtered[xcol].to_numpy()
+        y = df_filtered[ycol].to_numpy()
+
+        popt, _ = curve_fit(model_func, x, y, p0=p0, maxfev=10000)
+        r2 = r2_score(y, model_func(x, *popt))
+
+        # Plot fit curve: use a dense sorted x for smoothness
+        x_fit = np.linspace(np.min(x), np.max(x), 300)
+        y_fit = model_func(x_fit, *popt)
+        removed_str = ",".join(str(c) for c in removed_clusters) if removed_clusters else "none"
+        label_curve = f"Fit (removed: {removed_str})"
+
+        ax.plot(x_fit, y_fit, label=label_curve, linewidth=2, color=fit_color or None)
+
+        # Place R² near the right end of the curve
+        x_annot = x_fit[-1]
+        y_annot = y_fit[-1]
+        ax.annotate(
+            rf"$R^2$={r2:.3f}",
+            xy=(x_annot, y_annot),
+            xytext=(5, 5 + (5 if removed_str != "none" else 0)),
+            textcoords="offset points",
+            fontsize=8,
+            bbox=dict(boxstyle="round,pad=0.2", alpha=0.3),
+            arrowprops=dict(arrowstyle="->", lw=0.5)
+        )
+
+    # ax.set_xscale('log')
+    # ax.set_yscale('log')
+    ax.set_xlabel(xcol)
+    ax.set_ylabel(ycol)
+    ax.set_title(f"Scaled Nonlinear Regression with Clusters Removed for {name}\nFiltered data between {filteringBounds[0]}, {filteringBounds[1]}, {filteringBounds[2]}:1 horizontal scaling", fontsize=12)
+
+    # Deduplicate legend: keep one entry per label
+    handles, labels = ax.get_legend_handles_labels()
+    by_label = {}
+    for h, l in zip(handles, labels):
+        if l not in by_label:
+            by_label[l] = h
+    ax.legend(by_label.values(), by_label.keys(), frameon=True, fontsize=8, loc='lower right')
+
+    ax.grid(True, which='both', linestyle='--', linewidth=0.5)
+    plt.tight_layout()
+    plt.show()
+
+
+def combined_regression_clustering_linear(filteringBounds, name, full_clustered_df,
+                                          cluster_filtered_dfs,
+                                          xcol, ycol):
+    """
+    A variant of combined_regression_clustering that uses linear regression from scikit-learn.
+
+    full_clustered_df: DataFrame including 'cluster' column (the original KMeans result)
+    cluster_filtered_dfs: list of tuples: (df_after_removal_with_no_cluster_col, removed_clusters_list, fit_color)
+    """
+    n_clusters = int(full_clustered_df['cluster'].max() + 1)
+    palette = sns.color_palette("tab10", n_colors=n_clusters)
+
+    fig, ax = plt.subplots(figsize=(8, 5))
+
+    for ci in range(n_clusters):
+        subset = full_clustered_df[full_clustered_df['cluster'] == ci]
+        if subset.empty:
+            continue
+        x = subset[xcol].to_numpy()
+        y = subset[ycol].to_numpy()
+        ax.scatter(x, y, label=f"Cluster {ci}", alpha=0.6, edgecolors='none', s=40,
+                   color=palette[ci])
+
+    for df_filtered, removed_clusters, fit_color in cluster_filtered_dfs:
+        df_filtered_subset = df_filtered[~df_filtered['cluster'].isin(removed_clusters)].drop(columns='cluster')
+
+        x_reg = df_filtered_subset[[xcol]].to_numpy()
+        y_reg = df_filtered_subset[ycol].to_numpy()
+
+        model = LinearRegression()
+        model.fit(x_reg, y_reg)
+
+        y_pred = model.predict(x_reg)
+        r2 = r2_score(y_reg, y_pred)
+
+        x_fit = np.linspace(np.min(x_reg), np.max(x_reg), 300).reshape(-1, 1)
+        y_fit = model.predict(x_fit)
+
+        removed_str = ",".join(str(c) for c in removed_clusters) if removed_clusters else "none"
+        label_curve = f"Fit (removed: {removed_str})"
+
+        ax.plot(x_fit, y_fit, label=label_curve, linewidth=2, color=fit_color or None)
+
+        x_annot = x_fit[-1]
+        y_annot = y_fit[-1]
+        ax.annotate(
+            rf"$R^2$={r2:.3f}",
+            xy=(x_annot, y_annot),
+            xytext=(5, 5 + (5 if removed_str != "none" else 0)),
+            textcoords="offset points",
+            fontsize=8,
+            bbox=dict(boxstyle="round,pad=0.2", alpha=0.3),
+            arrowprops=dict(arrowstyle="->", lw=0.5)
+        )
+
+    ax.set_xlabel(xcol)
+    ax.set_ylabel(ycol)
+    ax.set_title(
+        f"Linear Regression with Clusters Removed for {name}\nFiltered data between {filteringBounds[0]}, {filteringBounds[1]}, {filteringBounds[2]}:1 horizontal scaling",
+        fontsize=12)
+
+    handles, labels = ax.get_legend_handles_labels()
+    by_label = {}
+    for h, l in zip(handles, labels):
+        if l not in by_label:
+            by_label[l] = h
+    ax.legend(by_label.values(), by_label.keys(), frameon=True, fontsize=8, loc='lower right')
+
+    ax.grid(True, which='both', linestyle='--', linewidth=0.5)
+    plt.tight_layout()
+    plt.show()
+
 def remove_outliers(df, col, min_value=None, max_value=None):
     """
     Removes rows based on optional minimum and/or maximum thresholds for specified columns.
@@ -456,12 +605,14 @@ def remove_outliers(df, col, min_value=None, max_value=None):
     orig_shape = df.shape
     df_out = df.copy()
 
-    if col is not None and min_value is not None:
-        if col not in df_out.columns:
-            raise KeyError(f"Column '{col}' not in DataFrame.")
+    if col is not None:
         df_out = df_out.dropna(subset=[col])
         before = df_out.shape
-        df_out = df_out[df_out[col].between(min_value, max_value, inclusive="both")]
+        if min_value is not None:
+            df_out = df_out[df_out[col] >= min_value]
+        if max_value is not None :
+            df_out = df_out[df_out[col] <= max_value]
+        # df_out = df_out[df_out[col].between(min_value, max_value, inclusive="both")]
         after = df_out.shape
         print(f"Applied filter on {min_value} <= '{col}' <= {max_value}: {before} -> {after}")
 

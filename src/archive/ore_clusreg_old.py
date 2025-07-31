@@ -1,11 +1,7 @@
 import numpy as np
-import pandas as pd
-from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
-import matplotlib.ticker as ticker
-import seaborn as sns
-import project_1v2_0
+from src import project_1v2_0
 
 all_exports_capita = project_1v2_0.load_pop_data()
 labels = ['Cereals', 'Inorganic', 'Mineral', 'Ores', 'Wood']
