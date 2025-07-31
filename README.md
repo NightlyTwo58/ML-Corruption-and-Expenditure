@@ -1,16 +1,13 @@
 # Natural Resource Exports & HDI Analysis
 
 ## Project Overview
+![My awesome screenshot](images/mineral_double_nonlinear.png)
 
 This project investigates the complex relationship between natural resource exports and a country's Human Development Index (HDI). The impact of such exports has long been debated, with some theories suggesting accelerated development through capital inflow, while others point to negative effects like the "resource curse" and "Dutch disease," fostering corruption and complacency. Our goal is to analyze these competing hypotheses by examining the net effect of natural resource exports on the HDI, providing a unified perspective on their true impact.
 
 We specifically focus on the export of cereal, oil, lumber, rare earth metals, and ores from countries worldwide during the period 2010-2020. The Human Development Index (HDI) serves as our primary metric, a composite index encompassing life expectancy, education, and standard of living.
 
-![My awesome screenshot](images/new/all_scatter_3D.png)
-![My awesome screenshot](images/new/Mineral Oil/mineral_kmeans_2D.png)
-
-Future plans for futher segmentation / clustering call for 2 nonlinear regression trends across 2 clusters to more concretely define patterns (in progress).
-![Future Plans](images/new/Mineral Oil/nonlinear_plan.png)
+![My awesome screenshot](images/all_scatter_3D.png)
 
 ## Key Features
 
@@ -46,13 +43,7 @@ Future plans for futher segmentation / clustering call for 2 nonlinear regressio
     ```
     *(Replace `yourusername` and `P1` with your actual GitHub username and repository name if different.)*
 
-2.  **Create a virtual environment (recommended):**
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-    ```
-
-3.  **Install dependencies:**
+2. **Install dependencies:**
     ```bash
     pip install -r requirements.txt
     ```
@@ -61,10 +52,8 @@ Future plans for futher segmentation / clustering call for 2 nonlinear regressio
 
 The datasets used in this project are publicly available:
 
-1.  **UN Comtrade:**
-    * **Main portal:** [https://comtradeplus.un.org](https://comtradeplus.un.org)
-    * **Oil dataset direct link (example):** [https://comtradeplus.un.org/TradeFlow?Frequency=A&Flows=X&CommodityCodes=2709&Partners=0&Reporters=all&period=all&AggregateBy=none&BreakdownMode=plus](https://comtradeplus.un.org/TradeFlow?Frequency=A&Flows=X&CommodityCodes=2709&Partners=0&Reporters=all&period=all&AggregateBy=none&BreakdownMode=plus)
-    * *Note: You may need to download data for other specific resource types (cereal, lumber, rare earth metals, ores) from the UN Comtrade portal manually, selecting the relevant commodity codes and time periods.*
+1.  **Resource Data, UN Comtrade:**
+    * **Main portal:** [https://comtradeplus.un.org](https://comtradeplus.un.org) *Data from 2010 for all countries, individually for cereals, lumber, rare earth (inorganic) metals, and ores.*
 
 2.  **HDI Data, UNDP:**
     * **Direct download:** [https://hdr.undp.org/sites/default/files/2023-24_HDR/HDR23-24_Composite_indices_complete_time_series.csv](https://hdr.undp.org/sites/default/files/2023-24_HDR/HDR23-24_Composite_indices_complete_time_series.csv)
@@ -93,24 +82,28 @@ P1/
 
 ## Usage
 
-The primary workflow involves running Python scripts sequentially to process data, perform analysis, and generate outputs.
-
+Step 1 is data cleaning explanation- for execution skip to step 2.
 1.  **Organize and preprocess data:**
-    * Initially, some manual organization in Excel might be beneficial for large raw CSVs.
-    * Run the data processing script to clean and merge the datasets:
+    * Data is already pre-cleaned and ready, `data/Exports Pop Comb`
+    * The provided HDI and resource export data was manually combined.
+    * Afterwards, that data was combined with population data with:
         ```bash
-        python src/data_processing.py
+        python src/population_cleaning.py
         ```
-        This script will typically save processed data into `data/processed/`.
-
+      for per capita data.
 2.  **Run analysis and generate visualizations:**
-    * Execute the main analysis script to perform regressions, clustering, and generate plots.
+    * Execute individual scripts to generate plots for regressions overlaid on clustering.
         ```bash
-        python src/analysis.py
+        python src/mineral_clusreg.py
+      python src/inorganic_clusreg.py
+      python src/ore_clusreg.py
+      python src/wood_clusreg.py
+      python src/cereals_clusreg.py
         ```
-        This script will save visualizations to `outputs/plots/` and clustering results (CSV files) to `outputs/clusters/`.
-
-*(For a more interactive exploration of the analysis steps, refer to the Jupyter notebooks in the `notebooks/` directory if provided.)*
+    * The main file can also be executed for more basic plots.
+        ```bash
+        python src/project_1v2_0.py
+        ```
 
 ## Technologies Used
 
@@ -120,14 +113,12 @@ The primary workflow involves running Python scripts sequentially to process dat
 * Scikit-learn
 * Matplotlib
 * Seaborn
-* Jupyter (for notebooks, if applicable)
 * Microsoft Excel
-* Google Colaboratory (for development/testing)
-* Any Python IDE (e.g., VS Code, PyCharm)
+* Jupyter / Google Colab (legacy, no longer used)
 
 ## Authors
 
-* **Richard Cai** (rjc432)
+* **Richard Cai** (rjc432) ***v2.0***
 * **Wenkai Zhao** (wz459)
 
 ## Acknowledgments

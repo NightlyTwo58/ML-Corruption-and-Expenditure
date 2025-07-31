@@ -1,9 +1,7 @@
 import numpy as np
 import pandas as pd
-from sklearn.cluster import KMeans
-import matplotlib.pyplot as plt
-from scipy.optimize import curve_fit
-import matplotlib.ticker as ticker
+
+# this program used for appending population from data/population_data.csv into every export/HDI .csv inside data/Exports Data Comb
 
 def load_data():
     """
@@ -13,20 +11,20 @@ def load_data():
         list: A list containing pandas DataFrames for cereals, inorganic,
               mineral, ores, and wood exports.
     """
-    cereals = pd.read_csv("data/Exports Data Comb/RCereals.csv_with_HDI.csv")
-    inorganic = pd.read_csv("data/Exports Data Comb/RInorganic.csv_with_HDI.csv")
-    mineral = pd.read_csv("data/Exports Data Comb/RMineral.csv_with_HDI.csv")
-    ores = pd.read_csv("data/Exports Data Comb/ROres.csv_with_HDI.csv")
-    wood = pd.read_csv("data/Exports Data Comb/RWood.csv_with_HDI.csv")
-    population = pd.read_csv("data/population_data.csv")
+    cereals = pd.read_csv("../data/Exports Data Comb/RCereals.csv_with_HDI.csv")
+    inorganic = pd.read_csv("../data/Exports Data Comb/RInorganic.csv_with_HDI.csv")
+    mineral = pd.read_csv("../data/Exports Data Comb/RMineral.csv_with_HDI.csv")
+    ores = pd.read_csv("../data/Exports Data Comb/ROres.csv_with_HDI.csv")
+    wood = pd.read_csv("../data/Exports Data Comb/RWood.csv_with_HDI.csv")
+    population = pd.read_csv("../data/population_data.csv")
     return [cereals, inorganic, mineral, ores, wood], population, ['Cereals', 'Inorganic', 'Mineral', 'Ores', 'Wood']
 
 def load_pop_data():
-    cereals = pd.read_csv("data/Exports Pop Comb/Cereals_population.csv")
-    inorganic = pd.read_csv("data/Exports Pop Comb/Inorganic_population.csv")
-    mineral = pd.read_csv("data/Exports Pop Comb/Mineral_population.csv")
-    ores = pd.read_csv("data/Exports Pop Comb/Ores_population.csv")
-    wood = pd.read_csv("data/Exports Pop Comb/Wood_population.csv")
+    cereals = pd.read_csv("../data/Exports Pop Comb/Cereals_population.csv")
+    inorganic = pd.read_csv("../data/Exports Pop Comb/Inorganic_population.csv")
+    mineral = pd.read_csv("../data/Exports Pop Comb/Mineral_population.csv")
+    ores = pd.read_csv("../data/Exports Pop Comb/Ores_population.csv")
+    wood = pd.read_csv("../data/Exports Pop Comb/Wood_population.csv")
     return [cereals, inorganic, mineral, ores, wood], ['Cereals', 'Inorganic', 'Mineral', 'Ores', 'Wood']
 
 def add_population_data(export_df, population_df, output_filename="output_with_population.csv"):
