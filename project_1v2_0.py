@@ -439,6 +439,37 @@ def perform_nonlinear_regression(df, label, feature, target, model_func, p0=None
     plt.legend()
     plt.grid(True)
 
+def remove_outliers(df, col, min_value=None, max_value=None):
+    """
+    Removes rows based on optional minimum and/or maximum thresholds for specified columns.
+    If a bound is not provided (None), it is skipped.
+
+    Args:
+        df (pandas.DataFrame): Input DataFrame.
+        col (str): Column name for bound filtering.
+        min_value (float or int or None): Minimum threshold; rows with df[minchar] < min_value are removed.
+        max_value (float or int or None): Maximum threshold; rows with df[maxchar] > max_value are removed.
+
+    Returns:
+        pandas.DataFrame: Filtered copy of the DataFrame.
+    """
+    orig_shape = df.shape
+    df_out = df.copy()
+
+    if col is not None and min_value is not None:
+        if col not in df_out.columns:
+            raise KeyError(f"Column '{col}' not in DataFrame.")
+        df_out = df_out.dropna(subset=[col])
+        before = df_out.shape
+        df_out = df_out[df_out[col].between(min_value, max_value, inclusive="both")]
+        after = df_out.shape
+        print(f"Applied filter on {min_value} <= '{col}' <= {max_value}: {before} -> {after}")
+
+    if min_value is None or max_value is None:
+        print(f"No filters applied; returning original shape {orig_shape}")
+
+    return df_out
+
 def power_law(x, a, b):
     """
     Defines a power-law function for non-linear regression.
@@ -451,11 +482,13 @@ def power_law(x, a, b):
     Returns:
         numpy.ndarray: The calculated y values.
     """
-    # Add a small epsilon to x to avoid log(0) if x can be zero in power function.
-    # For very small x values, np.power(0, b) can be 0 or 1 depending on b.
-    # If your data naturally has 0 dollar_value, you might need to reconsider
-    # the power law model or add a small offset.
-    return a * np.power(x + 1e-9, b) # Added a small constant to prevent issues with x=0
+    # Added a small constant to prevent issues with x=0
+    return a * np.power(x + 1e-9, b)
+
+def dedupe_legend(ax):
+    handles, labels = ax.get_legend_handles_labels()
+    by_label = dict(zip(labels, handles))
+    ax.legend(by_label.values(), by_label.keys(), frameon=True)
 
 if __name__ == "__main__":
     all_exports = load_data()
