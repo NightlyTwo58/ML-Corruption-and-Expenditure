@@ -5,6 +5,7 @@
 # import wood_clusreg
 # import inorganic_clusreg
 
+import os
 import project_1v2_0
 import numpy as np
 import sys
@@ -57,7 +58,8 @@ def filter_by_cluster(clusters, filename):
         country_codes_df = pd.read_csv('data/country_codes.csv')
 
         filtered_df = df[df['cluster'].isin(clusters)].copy()
-        newfile = filename + '_group' + '_'.join(str(n) for n in clusters)
+        base, ext = os.path.splitext(filename)
+        newfile = f"{base}_group_{'_'.join(str(n) for n in clusters)}{ext}"
 
         print("Countries (years) filtered")
         unique_countries_years = filtered_df.groupby('country_code_letter')['year'].apply(list)
@@ -71,5 +73,6 @@ def filter_by_cluster(clusters, filename):
 
 # Example usage:
 if __name__ == "__main__":
-    # filter_hdi_ratio('clustering_results/mineral.csv', 10000, 0.9)
     filter_by_cluster([0], 'data/clustering_results/mineral.csv')
+    filter_hdi_ratio('data/clustering_results/mineral_group_0.csv', 0.1, 1)
+    filter_by_cluster([1], 'data/clustering_results/mineral.csv')
