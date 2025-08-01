@@ -7,7 +7,8 @@ maxfilter = None
 yscalar = 1
 all_exports_capita[3] = project_1v2_0.remove_outliers(all_exports_capita[3], "dollar_per_capita", minfilter, maxfilter)
 clusterdata = project_1v2_0.perform_kmeans_clustering(all_exports_capita[3], ['dollar_per_capita', 'HDI_value'], 7, yscalar)
-clusterdata.to_csv('clustering_results/ore.csv', index=False)
+clusterdata = project_1v2_0.country_code_to_names(clusterdata)
+clusterdata.to_csv('data/clustering_results/ore.csv', index=False)
 
 project_1v2_0.combined_regression_clustering(
     [minfilter, maxfilter, yscalar],

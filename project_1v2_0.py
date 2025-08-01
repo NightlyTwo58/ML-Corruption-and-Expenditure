@@ -20,19 +20,19 @@ def load_data():
         list: A list containing pandas DataFrames for cereals, inorganic,
               mineral, ores, and wood exports.
     """
-    cereals = pd.read_csv("../data/Exports Data Comb/RCereals.csv_with_HDI.csv")
-    inorganic = pd.read_csv("../data/Exports Data Comb/RInorganic.csv_with_HDI.csv")
-    mineral = pd.read_csv("../data/Exports Data Comb/RMineral.csv_with_HDI.csv")
-    ores = pd.read_csv("../data/Exports Data Comb/ROres.csv_with_HDI.csv")
-    wood = pd.read_csv("../data/Exports Data Comb/RWood.csv_with_HDI.csv")
+    cereals = pd.read_csv("data/Exports Data Comb/RCereals.csv_with_HDI.csv")
+    inorganic = pd.read_csv("data/Exports Data Comb/RInorganic.csv_with_HDI.csv")
+    mineral = pd.read_csv("data/Exports Data Comb/RMineral.csv_with_HDI.csv")
+    ores = pd.read_csv("data/Exports Data Comb/ROres.csv_with_HDI.csv")
+    wood = pd.read_csv("data/Exports Data Comb/RWood.csv_with_HDI.csv")
     return [cereals, inorganic, mineral, ores, wood]
 
 def load_pop_data():
-    cereals = pd.read_csv("../data/Exports Per Capita/Cereals_capita.csv")
-    inorganic = pd.read_csv("../data/Exports Per Capita/Inorganic_capita.csv")
-    mineral = pd.read_csv("../data/Exports Per Capita/Mineral_capita.csv")
-    ores = pd.read_csv("../data/Exports Per Capita/Ores_capita.csv")
-    wood = pd.read_csv("../data/Exports Per Capita/Wood_capita.csv")
+    cereals = pd.read_csv("data/Exports Per Capita/Cereals_capita.csv")
+    inorganic = pd.read_csv("data/Exports Per Capita/Inorganic_capita.csv")
+    mineral = pd.read_csv("data/Exports Per Capita/Mineral_capita.csv")
+    ores = pd.read_csv("data/Exports Per Capita/Ores_capita.csv")
+    wood = pd.read_csv("data/Exports Per Capita/Wood_capita.csv")
     return [cereals, inorganic, mineral, ores, wood]
 
 def analyze_hdi_correlation(all_exports, labels):
@@ -640,6 +640,22 @@ def dedupe_legend(ax):
     handles, labels = ax.get_legend_handles_labels()
     by_label = dict(zip(labels, handles))
     ax.legend(by_label.values(), by_label.keys(), frameon=True)
+
+def country_code_to_names(df):
+    country_codes = pd.read_csv('data/country_codes.csv')
+    code_to_name_map = country_codes.set_index('alpha-3')['name'].to_dict()
+    df['country_code_letter'] = df['country_code_letter'].map(code_to_name_map)
+    return df
+
+def country_code_convert(filename):
+    """
+    Changes all country codes in a file out for their corresponding country names.
+
+    Args:
+        filename (str): The path to the input CSV file.
+    """
+    df = pd.read_csv(filename)
+    country_code_to_names(df).to_csv(filename, index=False, float_format='%.6f')
 
 if __name__ == "__main__":
     all_exports = load_data()

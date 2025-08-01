@@ -1,7 +1,7 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
-from src import project_1v2_0
+import project_1v2_0
 
 all_exports_capita = project_1v2_0.load_pop_data()
 labels = ['Cereals', 'Inorganic', 'Mineral', 'Ores', 'Wood']
