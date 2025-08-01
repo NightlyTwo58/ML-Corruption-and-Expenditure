@@ -13,7 +13,7 @@ clusterdata.to_csv('data/clustering_results/mineral.csv', index=False)
 
 project_1v2_0.combined_regression_clustering(
     [minfilter, maxfilter, yscalar],
-    labels[2], full_clustered_df=clusterdata,
+    'Oil', full_clustered_df=clusterdata,
     cluster_filtered_dfs=[
         (clusterdata, [0], 'C1'),
         (clusterdata, [2, 3], 'C2')

@@ -2,12 +2,16 @@
 
 ## Project Overview
 ![My awesome screenshot](images/mineral_double_nonlinear.png)
+[Cluster 1 Resource Curse States](data/clustering_results/mineral_group_1.csv) | [Cluster 0 Gulf States](data/clustering_results/mineral_group_0.csv)
 
 This project investigates the complex relationship between natural resource exports and a country's Human Development Index (HDI). The impact of such exports has long been debated, with some theories suggesting accelerated development through capital inflow, while others point to negative effects like the "resource curse" and "Dutch disease," fostering corruption and complacency. Our goal is to analyze these competing hypotheses by examining the net effect of natural resource exports on the HDI, providing a unified perspective on their true impact.
 
 We specifically focus on the export of cereal, oil, lumber, rare earth metals, and ores from countries worldwide during the period 2010-2020. The Human Development Index (HDI) serves as our primary metric, a composite index encompassing life expectancy, education, and standard of living.
 
 ![My awesome screenshot](images/all_scatter_3D.png)
+
+![Rare Earth Metals Graph](images/inorganic_double_nonlinear.png)
+An interesting example of an inverted trend with rare earth metals.
 
 ## Key Features
 

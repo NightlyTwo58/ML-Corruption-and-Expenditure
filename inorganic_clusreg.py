@@ -12,7 +12,7 @@ clusterdata.to_csv('data/clustering_results/inorganic.csv', index=False)
 
 project_1v2_0.combined_regression_clustering(
     [minfilter, maxfilter, yscalar],
-    'Ores', full_clustered_df=clusterdata,
+    'Rare Earth Metals', full_clustered_df=clusterdata,
     cluster_filtered_dfs=[
         # (clusterdata, [1, 5, 4, 3], 'C1'),
         (clusterdata, [], 'C2'),
