@@ -16,36 +16,36 @@ HDI-to-export ratio in the HDI filtering function of metrics.py was not found to
 
 [Cluster 1 Resource Curse States](data/clustering_results/mineral_group_1.csv)
 
-Country: Angola (2013, 2014, 2015, 2017, 2018, 2019)
-Country: Congo (2013, 2018)
-Country: Gabon (2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020)
-Country: Iraq (2013, 2014, 2015, 2016)
+Angola (2013, 2014, 2015, 2017, 2018, 2019)  
+Congo (2013, 2018)  
+Gabon (2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020)  
+Iraq (2013, 2014, 2015, 2016)  
 
 [Cluster 4 Rentier States](data/clustering_results/mineral_group_4.csv) 
 
-Country: Algeria (2013, 2014)  
-Country: Azerbaijan (2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020)
-Country: Belarus (2013, 2014)  
-Country: Guyana (2020)  
-Country: Kazakhstan (2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020)  
-Country: Libya (2016, 2017, 2018, 2019)  
-Country: Malaysia (2013, 2014, 2015, 2017, 2018, 2019)  
-Country: Mongolia (2018, 2019)  
-Country: Oman (2015, 2020)  
-Country: Russian Federation (2013, 2014, 2015, 2016, 2017)  
-Country: Seychelles (2013, 2014, 2015, 2016, 2017, 2018, 2019)  
-Country: Trinidad and Tobago (2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020)  
-Country: Venezuela (2013)
+Algeria (2013, 2014)  
+Azerbaijan (2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020)
+Belarus (2013, 2014)  
+Guyana (2020)  
+Kazakhstan (2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020)  
+Libya (2016, 2017, 2018, 2019)  
+Malaysia (2013, 2014, 2015, 2017, 2018, 2019)  
+Mongolia (2018, 2019)  
+Oman (2015, 2020)  
+Russian Federation (2013, 2014, 2015, 2016, 2017)  
+Seychelles (2013, 2014, 2015, 2016, 2017, 2018, 2019)  
+Trinidad and Tobago (2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020)  
+Venezuela (2013)
 
 [Cluster 0 Gulf States](data/clustering_results/mineral_group_0.csv)
 
-Country: Bahrain (2013, 2014)  
-Country: Brunei Darussalam (2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020)  
-Country: Kuwait (2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020  
-Country: Oman (2013, 2014)  
-Country: Qatar (2015, 2016, 2017, 2018, 2019, 2020)  
-Country: Saudi Arabia (2013, 2014)  
-Country: United Arab Emirates (2013, 2014)  
+Bahrain (2013, 2014)  
+Brunei Darussalam (2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020)  
+Kuwait (2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020  
+Oman (2013, 2014)  
+Qatar (2015, 2016, 2017, 2018, 2019, 2020)  
+Saudi Arabia (2013, 2014)  
+United Arab Emirates (2013, 2014)   
 
 Rare earth metals were the exception to any trend, with a resounding *negative* correlation between HDI and export levels, suggesting that exporting rare earth metals was something more developed countries quickly abandoned (enviromental damage, for example), or something forced upon lesser developed countries by necessity (pollution haven hypothesis (PHH)).
 
