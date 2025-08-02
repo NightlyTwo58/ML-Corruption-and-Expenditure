@@ -1,17 +1,61 @@
 # Natural Resource Exports & HDI Analysis
 
 ## Project Overview
-![My awesome screenshot](images/mineral_double_nonlinear.png)
-[Cluster 1 Resource Curse States](data/clustering_results/mineral_group_1.csv) | [Cluster 0 Gulf States](data/clustering_results/mineral_group_0.csv)
-
+![Oil_clusterings](images/mineral_double_nonlinear.png)
 This project investigates the complex relationship between natural resource exports and a country's Human Development Index (HDI). The impact of such exports has long been debated, with some theories suggesting accelerated development through capital inflow, while others point to negative effects like the "resource curse" and "Dutch disease," fostering corruption and complacency. Our goal is to analyze these competing hypotheses by examining the net effect of natural resource exports on the HDI, providing a unified perspective on their true impact.
 
 We specifically focus on the export of cereal, oil, lumber, rare earth metals, and ores from countries worldwide during the period 2010-2020. The Human Development Index (HDI) serves as our primary metric, a composite index encompassing life expectancy, education, and standard of living.
 
-![My awesome screenshot](images/all_scatter_3D.png)
+![3D_all](images/all_scatter_3D.png)
+
+# Short Report
+We find that low HDI < 0.75 and high mineral (oil) resource exports > 1000 to exemplify the "resource curse" phenomenon.
+Despit such high exports in excess of 1000 dollars per capita, many of these countries seem to lack improvements in HDI and have high levels of curruption or inequity.
+HDI-to-export ratio in the HDI filtering function of metrics.py was not found to be useful.
+![Oil_clusterings](images/mineral_double_nonlinear.png)
+
+[Cluster 1 Resource Curse States](data/clustering_results/mineral_group_1.csv)
+
+Country: Angola (2013, 2014, 2015, 2017, 2018, 2019)
+Country: Congo (2013, 2018)
+Country: Gabon (2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020)
+Country: Iraq (2013, 2014, 2015, 2016)
+
+[Cluster 4 Rentier States](data/clustering_results/mineral_group_4.csv) 
+
+Country: Algeria (2013, 2014)  
+Country: Azerbaijan (2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020)
+Country: Belarus (2013, 2014)  
+Country: Guyana (2020)  
+Country: Kazakhstan (2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020)  
+Country: Libya (2016, 2017, 2018, 2019)  
+Country: Malaysia (2013, 2014, 2015, 2017, 2018, 2019)  
+Country: Mongolia (2018, 2019)  
+Country: Oman (2015, 2020)  
+Country: Russian Federation (2013, 2014, 2015, 2016, 2017)  
+Country: Seychelles (2013, 2014, 2015, 2016, 2017, 2018, 2019)  
+Country: Trinidad and Tobago (2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020)  
+Country: Venezuela (2013)
+
+[Cluster 0 Gulf States](data/clustering_results/mineral_group_0.csv)
+
+Country: Bahrain (2013, 2014)  
+Country: Brunei Darussalam (2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020)  
+Country: Kuwait (2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020  
+Country: Oman (2013, 2014)  
+Country: Qatar (2015, 2016, 2017, 2018, 2019, 2020)  
+Country: Saudi Arabia (2013, 2014)  
+Country: United Arab Emirates (2013, 2014)  
+
+Rare earth metals were the exception to any trend, with a resounding *negative* correlation between HDI and export levels, suggesting that exporting rare earth metals was something more developed countries quickly abandoned (enviromental damage, for example), or something forced upon lesser developed countries by necessity (pollution haven hypothesis (PHH)).
 
 ![Rare Earth Metals Graph](images/inorganic_double_nonlinear.png)
-An interesting example of an inverted trend with rare earth metals.
+
+Cereals, wood, and ores had normal trends where wealth and HDI were heavily correlated and abnormalities limited.
+
+![Wood Graph](images/wood_double_nonlinear.png)
+![Ore Graph](images/ore_double_nonlinear.png)
+![Cereals Graph](images/cereal_double_linear.png)
 
 ## Key Features
 
