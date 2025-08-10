@@ -15,6 +15,8 @@ env/
 *.swp
 *.bak
 *.swo
+.idea
+archive/project_1v1.0.ipynb
 
 # Operating System files
 .DS_Store

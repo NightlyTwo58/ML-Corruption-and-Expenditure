@@ -111,21 +111,28 @@ The datasets used in this project are publicly available:
 
 ### Project Structure
 
-P1/
-├── data/
-│   ├── Exports Data Comb/         # Data related to exports combinations
-│   ├── Exports Per Capita/        # Data related to exports per capita
-│   ├── Exports Pop Comb/          # Data related to exports and population combinations
-│   └── Mineral Oil/               # Specific datasets for mineral oil analysis
-├── images/                        # Generated plots and visualization images
-├── venv/                          # Python virtual environment (library root)
-├── .gitignore                     # Specifies intentionally untracked files to ignore
-├── mineralv2.0.py                 # Main script for mineral analysis (e.g., clustering/regression)
-├── population_cleaning.py         # Script for cleaning population data
-├── project_1v1.0.ipynb            # Jupyter notebook for project version 1.1
-├── project_1v2_0.py               # Script for project version 1.2
-├── README.md                      # This README file
-└── requirements.txt               # List of project dependencies
+P1/  
+├── archive/  
+├── data/  
+│   ├── clustering_results/  
+│   ├── clustering_results_2/  
+│   ├── Exports Data Comb/  
+│   ├── Exports Per Capita/   
+│   └── Exports Pop Comb/  
+├── images/
+│   └── old/ 
+├── .gitignore  
+├── cereal_clusreg.py  
+├── inorganic_clusreg.py  
+├── mineral_clusreg.py  
+├── ore_clusreg.py  
+├── wood_clusreg.py  
+├── metrics.py  
+├── population_cleaning.py  
+├── project_1v2_0.py  
+├── README.md  
+├── sample_analysis_cluster_4_data_Inorganic.xlsx  
+└── requirements.txt   
 
 
 ## Usage
