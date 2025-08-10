@@ -119,8 +119,8 @@ P1/
 │   ├── Exports Data Comb/  
 │   ├── Exports Per Capita/   
 │   └── Exports Pop Comb/  
-├── images/
-│   └── old/ 
+├── images/  
+│   └── old/  
 ├── .gitignore  
 ├── cereal_clusreg.py  
 ├── inorganic_clusreg.py  
