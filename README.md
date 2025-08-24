@@ -1,7 +1,12 @@
 # Natural Resource Exports & HDI Analysis
 
 ## Project Overview
-![Oil_clusterings](images/mineral_double_nonlinear.png)
+<table>
+  <tr>
+    <td><img src="images/mineral_double_nonlinear.png" width="350"/></td>
+    <td><img src="images/heatmaps/oil_heatmap.png" width="350"/></td>
+  </tr>
+</table>
 This project investigates the complex relationship between natural resource exports and a country's Human Development Index (HDI). The impact of such exports has long been debated, with some theories suggesting accelerated development through capital inflow, while others point to negative effects like the "resource curse" and "Dutch disease," fostering corruption and complacency. Our goal is to analyze these competing hypotheses by examining the net effect of natural resource exports on the HDI, providing a unified perspective on their true impact.
 
 We specifically focus on the export of cereal, oil, lumber, rare earth metals, and ores from countries worldwide during the period 2010-2020. The Human Development Index (HDI) serves as our primary metric, a composite index encompassing life expectancy, education, and standard of living.
@@ -48,14 +53,18 @@ Saudi Arabia (2013, 2014)
 United Arab Emirates (2013, 2014)   
 
 Rare earth metals were the exception to any trend, with a resounding *negative* correlation between HDI and export levels, suggesting that exporting rare earth metals was something more developed countries quickly abandoned (enviromental damage, for example), or something forced upon lesser developed countries by necessity (pollution haven hypothesis (PHH)).
-
-![Rare Earth Metals Graph](images/inorganic_double_nonlinear.png)
-
 Cereals, wood, and ores had normal trends where wealth and HDI were heavily correlated and abnormalities limited.
 
-![Wood Graph](images/wood_double_nonlinear.png)
-![Ore Graph](images/ore_double_nonlinear.png)
-![Cereals Graph](images/cereal_double_linear.png)
+<table>
+  <tr>
+    <td><img src="images/wood_double_nonlinear.png" width="300" /></td>
+    <td><img src="images/ore_double_nonlinear.png" width="300" /></td>
+  </tr>
+  <tr>
+    <td><img src="images/cereal_double_linear.png" width="300" /></td>
+    <td><img src="images/inorganic_double_nonlinear.png" width="300" /></td>
+  </tr>
+</table>
 
 ## Key Features
 

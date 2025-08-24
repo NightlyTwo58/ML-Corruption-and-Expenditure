@@ -52,6 +52,29 @@ def analyze_hdi_correlation(all_exports, labels):
         correlation_df.loc[label, 'HDI Correlation'] = correlation
     print(correlation_df.iloc[:, 0])
 
+def heatmap(df, variable, label):
+    """
+    Creates a heatmap of given independent variable against HDI values.
+
+    Args:
+        df (pandas.DataFrame): The DataFrame to source data from.
+        variable (str): Name of variable to plot HDI value against.
+    """
+    df_clean = df[[variable, 'HDI_value']].dropna()
+    lower, upper = np.percentile(df_clean[variable], [1, 99])
+    x = np.clip(df_clean[variable], lower, upper)
+    y = df_clean['HDI_value']
+
+    plt.figure(figsize=(7, 5))
+    plt.hist2d(x, y, bins=int(np.sqrt(len(df)) / 2), cmap='viridis')
+
+    plt.colorbar(label='Count')
+    plt.xlabel(variable)
+    plt.ylabel('HDI Value')
+    plt.title('1/99th Percentile Heatmap of ' + label)
+
+    plt.show()
+
 def plot_scatter(df, title_suffix):
     """
     Generates a scatter plot of 'dollar_value' vs 'HDI_value'.
@@ -678,6 +701,7 @@ if __name__ == "__main__":
 
     for export, label in zip(all_exports_capita, labels):
         plot_scatter(export, label)
+        heatmap(export, 'dollar_per_capita', label)
 
     print("\nHDI Correlation for each resource:")
     analyze_hdi_correlation(all_exports_capita, labels)
