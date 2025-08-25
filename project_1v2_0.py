@@ -2,15 +2,14 @@ import numpy as np
 import pandas as pd
 from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
-from mpl_toolkits.mplot3d import Axes3D
 from scipy.optimize import curve_fit
 from scipy.stats import linregress
+from scipy.stats import f_oneway
 import matplotlib.ticker as ticker
 import seaborn as sns
 from sklearn.metrics import r2_score
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.linear_model import LinearRegression
-
 
 def load_data():
     """
@@ -35,6 +34,20 @@ def load_pop_data():
     wood = pd.read_csv("data/Exports Per Capita/Wood_capita.csv")
     return [cereals, inorganic, mineral, ores, wood]
 
+
+def country_to_continent_map(continent_csv):
+    """
+    Build a dictionary mapping each country code to its continent.
+
+    Args:
+        continent_csv (str): Path to CSV with columns ['country_code', 'continent']
+
+    Returns:
+        dict: {country_code: continent}
+    """
+    mapping_df = pd.read_csv(continent_csv)
+    return dict(zip(mapping_df['alpha-3'], mapping_df['region']))
+
 def analyze_hdi_correlation(all_exports, labels):
     """
     Calculates and prints the correlation between 'dollar_value' and 'HDI_value'
@@ -51,6 +64,39 @@ def analyze_hdi_correlation(all_exports, labels):
         correlation = data['dollar_per_capita'].astype(float).corr(data['HDI_value'].astype(float))
         correlation_df.loc[label, 'HDI Correlation'] = correlation
     print(correlation_df.iloc[:, 0])
+
+def hdi_continent_corr(all_exports, labels, country_to_continent):
+    """
+    Runs one-way ANOVA to test whether export/HDI ratios differ by continent.
+
+    Args:
+        all_exports (list): DataFrames with ['country_code', 'dollar_per_capita', 'HDI_value']
+        labels (list): names for each dataset
+        country_to_continent (dict): maps country_code → continent
+
+    Returns:
+        pd.DataFrame: ANOVA F-statistic and p-value for each dataset
+    """
+    correlation_df = pd.DataFrame(index=labels, columns=['F-statistic', 'p-value'])
+
+    for data, label in zip(all_exports, labels):
+        data = data.dropna(subset=['dollar_per_capita', 'HDI_value']).copy()
+        data['export_capita_HDI_ratio'] = data['dollar_per_capita'] / data['HDI_value']
+
+        # Replace country with continent, specific countries don't matter
+        data['continent'] = data['country_code_letter'].map(country_to_continent)
+        data = data.dropna(subset=['continent']).copy()
+
+        print(data)
+
+        groups = [group['export_capita_HDI_ratio'].values
+                  for _, group in data.groupby('continent') if len(group) > 1]
+
+        f_stat, p_value = f_oneway(*groups)
+        correlation_df.loc[label, 'F-statistic'] = f_stat
+        correlation_df.loc[label, 'p-value'] = p_value
+
+    return correlation_df
 
 def heatmap(df, variable, label):
     """
@@ -683,6 +729,7 @@ def country_code_convert(filename):
 if __name__ == "__main__":
     all_exports = load_data()
     all_exports_capita = load_pop_data()
+    continent_map = country_to_continent_map("data/country_codes.csv")
     labels = ['Cereals', 'Inorganic', 'Mineral', 'Ores', 'Wood']
 
     print("--- Head of each DataFrame ---")
@@ -694,17 +741,19 @@ if __name__ == "__main__":
     for label, df in zip(labels, all_exports_capita):
         print(f"{label} Size: {df.size}")
 
-    print("\n--- Plotting and HDI Correlation ---")
-    histogram(all_exports_capita[0])
+    # histogram(all_exports_capita[0])
+
+    print("\nHDI Correlation for each resource:")
+    analyze_hdi_correlation(all_exports_capita, labels)
+    print("\nHDI Correlation for each continent by resource:")
+    results = hdi_continent_corr(all_exports_capita, labels, continent_map)
+    print(results)
 
     all_plot_scatter(all_exports_capita, labels)
 
     for export, label in zip(all_exports_capita, labels):
         plot_scatter(export, label)
         heatmap(export, 'dollar_per_capita', label)
-
-    print("\nHDI Correlation for each resource:")
-    analyze_hdi_correlation(all_exports_capita, labels)
 
     for i, export in enumerate(all_exports_capita):
         plt.figure(i)
