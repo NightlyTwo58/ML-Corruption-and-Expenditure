@@ -3,7 +3,7 @@
 ## Project Overview
 <table>
   <tr>
-    <td><img src="images/mineral_double_nonlinear.png" width="350"/></td>
+    <td><img src="images/regressions/mineral_double_nonlinear.png" width="400"/></td>
     <td><img src="images/heatmaps/oil_heatmap.png" width="350"/></td>
   </tr>
 </table>
@@ -57,12 +57,12 @@ Cereals, wood, and ores had normal trends where wealth and HDI were heavily corr
 
 <table>
   <tr>
-    <td><img src="images/wood_double_nonlinear.png" width="300" /></td>
-    <td><img src="images/ore_double_nonlinear.png" width="300" /></td>
+    <td><img src="images/regressions/wood_double_nonlinear.png" width="300" /></td>
+    <td><img src="images/regressions/ore_double_nonlinear.png" width="300" /></td>
   </tr>
   <tr>
-    <td><img src="images/cereal_double_linear.png" width="300" /></td>
-    <td><img src="images/inorganic_double_nonlinear.png" width="300" /></td>
+    <td><img src="images/regressions/cereal_double_linear.png" width="300" /></td>
+    <td><img src="images/regressions/inorganic_double_nonlinear.png" width="300" /></td>
   </tr>
 </table>
 
