@@ -38,9 +38,11 @@ def filter_hdi_ratio(filename, threshold, max_hdi=None):
             years_str = ', '.join(map(str, years))
             print(f"Country: {country} ({years_str})")
 
-        filtered_df.to_csv(filename + "_filtered_" + str(threshold), index=False, float_format='%.6f')
+        name, ext = os.path.splitext(filename)
+        new_filename = f"{name}_filtered_{threshold}{ext}"
 
-        print(f"File '{filename}' _filtered_ + '{threshold}' successfully filtered and overwritten.")
+        filtered_df.to_csv(new_filename, index=False, float_format="%.6f")
+        print(f"File '{new_filename}' successfully filtered and written.")
 
     except FileNotFoundError:
         print(f"Error: The file '{filename}' was not found.", file=sys.stderr)

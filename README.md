@@ -17,7 +17,7 @@ We specifically focus on the export of cereal, oil, lumber, rare earth metals, a
 We find that low HDI < 0.75 and high mineral (oil) resource exports > 1000 to exemplify the "resource curse" phenomenon.
 Despit such high exports in excess of 1000 dollars per capita, many of these countries seem to lack improvements in HDI and have high levels of curruption or inequity.
 HDI-to-export ratio in the HDI filtering function of metrics.py was not found to be useful.
-![Oil_clusterings](images/mineral_double_nonlinear.png)
+![Oil_clusterings](images/regressions/mineral_double_nonlinear.png)
 
 [Cluster 1 Resource Curse States](data/clustering_results/mineral_group_1.csv)
 
