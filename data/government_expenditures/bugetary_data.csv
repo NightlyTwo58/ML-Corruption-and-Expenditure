@@ -1,4 +1,4 @@
-,year,ccode_qog,country_name,country_id,country_code,cname_year,ccodealp_year,defense,economic,education,enviroment,services,housing,health,safety,recreation,social,revenue,bci
+,year,ccode_qog,country_name,country_id,country_code,cname_year,ccodealp_year,defense,economic,education,environment,services,housing,health,safety,recreation,social,revenue,bci
 50,1996,4,Afghanistan,AFG,700,Afghanistan 1996,AFG96,,,,,,,,,,,,63.571173
 51,1997,4,Afghanistan,AFG,700,Afghanistan 1997,AFG97,,,,,,,,,,,,63.397974
 52,1998,4,Afghanistan,AFG,700,Afghanistan 1998,AFG98,,,,,,,,,,,,63.150685
