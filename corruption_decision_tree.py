@@ -78,5 +78,4 @@ if __name__ == "__main__":
         raise SystemExit("No rows remaining after dropping missing label/revenue/bci values.")
     model, splits = train_and_evaluate(df, ratio_cols, test_size=0.2, random_state=42, max_depth=5)
 
-    joblib.dump(model, "bci_decision_tree.joblib")
-    print("Trained model saved to bci_decision_tree.joblib")
+    joblib.dump(model, "models/bci_decision_tree.joblib")

@@ -95,5 +95,4 @@ if __name__ == "__main__":
         raise SystemExit("No rows with complete data.")
     model, splits = train_and_evaluate(df, ratio_cols)
 
-    joblib.dump(model, "bci_random_forest.joblib")
-    print("Random Forest model saved to bci_random_forest.joblib")
+    joblib.dump(model, "models/bci_random_forest.joblib")
