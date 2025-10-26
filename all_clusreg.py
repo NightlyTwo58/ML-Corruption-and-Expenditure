@@ -21,7 +21,7 @@ cereal_df, cereal_km = project_1v3.combined_NN_clustering(
     filteringBounds=(10, 400, 1),
     n_clusters=4,
     cluster_filtered_dfs=[
-        # ([2], 'C1'),
+        ([2], 'C1'),
         ([], 'C2')
     ]
 )
@@ -36,8 +36,8 @@ mineral_df, mineral_km = project_1v3.combined_NN_clustering(
     filteringBounds=(1000, 50000, 3),
     n_clusters=5,
     cluster_filtered_dfs=[
-        # ([0], 'C1'),
-        # ([2, 3], 'C2'),
+        ([0], 'C1'),
+        ([2, 3], 'C2'),
         ([], 'C3'),
     ]
 )
@@ -53,7 +53,7 @@ inorganic_df, inorganic_km = project_1v3.combined_NN_clustering(
     n_clusters=5,
     cluster_filtered_dfs=[
         ([], 'C1'),
-        # ([1], 'C2')
+        ([1], 'C2')
     ]
 )
 
@@ -67,8 +67,8 @@ ores_df, ores_km = project_1v3.combined_NN_clustering(
     filteringBounds=(100, None, 1),
     n_clusters=7,
     cluster_filtered_dfs=[
-        # ([1, 5, 4, 3], 'C1'),
-        # ([6], 'C2'),
+        ([1, 5, 4, 3], 'C1'),
+        ([6], 'C2'),
         ([], 'C3')
     ],
 )
@@ -83,8 +83,8 @@ wood_df, wood_km = project_1v3.combined_NN_clustering(
     filteringBounds=(100, None, 1),
     n_clusters=5,
     cluster_filtered_dfs=[
-        # ([3, 4], 'C1'),
-        # ([4], 'C2'),
+        ([3, 4], 'C1'),
+        ([4], 'C2'),
         ([], 'C3')
     ],
 )

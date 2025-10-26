@@ -27,6 +27,18 @@ def load_data():
     wood = pd.read_csv("data/Exports Per Capita/Wood_capita.csv")
     return [cereals, inorganic, mineral, ores, wood]
 
+def filter_years(df, years_to_keep):
+    """
+    Filter a DataFrame to keep only rows where the 'year' column is in years_to_keep.
+
+    Args:
+        df (pd.DataFrame): Input DataFrame with a 'year' column
+        years_to_keep (list or array-like): Years to retain
+
+    Returns:
+        pd.DataFrame: Filtered DataFrame
+    """
+    return df[df['year'].isin(years_to_keep)].copy()
 
 def clustering(df, n_clusters, xcol, ycol, random_state=42):
     """
