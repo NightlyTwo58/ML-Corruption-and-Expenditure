@@ -157,12 +157,13 @@ def combined_regression_clustering(df, name, xcol, ycol,
                                    model_func, p0,
                                    n_clusters=None,
                                    cluster_filtered_dfs=None,
-                                   lr=1e-4, epochs=500,
+                                   lr=1e-4, epochs=5000,
                                    figsize=(8, 5),
                                    random_state=42):
     """
     Perform KMeans clustering, nonlinear regression fits, and plotting,
     using scaled data for analysis but original values for plotting.
+    Uses the nonlinear_regression() function (gradient descent parameterized model).
     """
     df = df.copy()
 
@@ -194,7 +195,6 @@ def combined_regression_clustering(df, name, xcol, ycol,
     # Step 2: plot clusters using original values
     palette = sns.color_palette("tab10", n_colors=n_clusters)
     fig, ax = plt.subplots(figsize=figsize)
-
     for ci in range(n_clusters):
         subset = df[df['cluster'] == ci]
         if subset.empty:
@@ -202,24 +202,27 @@ def combined_regression_clustering(df, name, xcol, ycol,
         ax.scatter(subset['_x_orig'], subset['_y_orig'], label=f"Cluster {ci}",
                    alpha=0.6, s=40, edgecolors='none', color=palette[ci])
 
-    # Step 3: PyTorch nonlinear regression on scaled values
+    # Step 3: Nonlinear regression using model_func
     if cluster_filtered_dfs is None:
         cluster_filtered_dfs = [([], 'black')]
 
     for removed_clusters, fit_color in cluster_filtered_dfs:
         df_used = df[~df['cluster'].isin(removed_clusters)]
-        x_scaled = df_used['_x_scaled'].to_numpy()
-        y_scaled = df_used['_y_scaled'].to_numpy()
+        x_scaled = df_used['_x_scaled'].to_numpy().flatten()
+        y_scaled = df_used['_y_scaled'].to_numpy().flatten()
 
-        # Train NN regression
-        model, r2 = train_nn_regression(x_scaled, y_scaled, lr=lr, epochs=epochs)
+        params, r2 = nonlinear_regression(
+            x_scaled, y_scaled,
+            model_func=model_func,
+            lr=lr, epochs=epochs, p0=p0
+        )
 
-        # Generate predictions
-        x_fit_scaled = np.linspace(x_scaled.min(), x_scaled.max(), 300).reshape(-1, 1).astype(np.float32)
-        y_fit_scaled = model(torch.from_numpy(x_fit_scaled)).detach().numpy().flatten()
+        # Generate fit curve
+        x_fit_scaled = np.linspace(x_scaled.min(), x_scaled.max(), 300)
+        y_fit_scaled = model_func(x_fit_scaled, *params)
 
         # Map back to original values
-        x_fit_orig = scaler_x.inverse_transform(x_fit_scaled)
+        x_fit_orig = scaler_x.inverse_transform(x_fit_scaled.reshape(-1, 1))
         y_fit_orig = scaler_y.inverse_transform((y_fit_scaled / y_scalar).reshape(-1, 1)).flatten()
 
         removed_str = ",".join(map(str, removed_clusters)) if removed_clusters else "none"
@@ -238,13 +241,10 @@ def combined_regression_clustering(df, name, xcol, ycol,
     # Step 4: Final formatting
     ax.set_xlabel(xcol)
     ax.set_ylabel(ycol)
-    ax.set_title(f"Clustering and Nonlinear Regression for {name}\n"
-                 f"Filtered data between {filteringBounds[0]}, {filteringBounds[1]}, "
-                 f"{filteringBounds[2]}:1 horizontal scaling")
+    ax.set_title(f"Clustering + Nonlinear Regression for {name}\n"
+                 f"Filtered between {min_val}, {max_val}, {y_scalar}:1 scaling")
 
-    handles, labels = ax.get_legend_handles_labels()
-    by_label = {l: h for h, l in zip(handles, labels)}
-    ax.legend(by_label.values(), by_label.keys(), frameon=True, fontsize=8, loc='lower right')
+    ax.legend(frameon=True, fontsize=8, loc='lower right')
     ax.grid(True, which='both', linestyle='--', linewidth=0.5)
     plt.tight_layout()
     plt.show()
@@ -294,7 +294,6 @@ def combined_NN_clustering(df, name, xcol, ycol,
     # Step 2: plot clusters using original values
     palette = sns.color_palette("tab10", n_colors=n_clusters)
     fig, ax = plt.subplots(figsize=figsize)
-
     for ci in range(n_clusters):
         subset = df[df['cluster'] == ci]
         if subset.empty:
@@ -302,52 +301,27 @@ def combined_NN_clustering(df, name, xcol, ycol,
         ax.scatter(subset['_x_orig'], subset['_y_orig'], label=f"Cluster {ci}",
                    alpha=0.6, s=40, edgecolors='none', color=palette[ci])
 
-    # Step 3: PyTorch nonlinear regression on scaled values
+    # Step 3: Neural network regression using helper
     if cluster_filtered_dfs is None:
         cluster_filtered_dfs = [([], 'black')]
 
     for removed_clusters, fit_color in cluster_filtered_dfs:
         df_used = df[~df['cluster'].isin(removed_clusters)]
-        x_scaled = df_used['_x_scaled'].to_numpy().reshape(-1, 1).astype(np.float32)
-        y_scaled = df_used['_y_scaled'].to_numpy().reshape(-1, 1).astype(np.float32)
+        x_scaled = df_used['_x_scaled'].to_numpy()
+        y_scaled = df_used['_y_scaled'].to_numpy()
 
-        X_tensor = torch.from_numpy(x_scaled)
-        Y_tensor = torch.from_numpy(y_scaled)
+        model, r2 = train_nn_regression(x_scaled, y_scaled, lr=lr, epochs=epochs)
 
-        # simple 1-hidden layer NN with 10 neurons
-        model = nn.Sequential(
-            nn.Linear(1, 10),
-            nn.Tanh(),
-            nn.Linear(10, 1)
-        )
+        x_fit_scaled = np.linspace(x_scaled.min(), x_scaled.max(), 300)
+        x_fit_torch = torch.from_numpy(x_fit_scaled.reshape(-1, 1).astype(np.float32))
+        y_fit_scaled = model(x_fit_torch).detach().numpy().flatten()
 
-        optimizer = optim.Adam(model.parameters(), lr=lr)
-        loss_fn = nn.MSELoss()
-
-        # training loop
-        for epoch in range(epochs):
-            optimizer.zero_grad()
-            y_pred = model(X_tensor)
-            loss = loss_fn(y_pred, Y_tensor)
-            loss.backward()
-            optimizer.step()
-
-        # generate predictions
-        x_fit_scaled = np.linspace(x_scaled.min(), x_scaled.max(), 300).astype(np.float32).reshape(-1, 1)
-        y_fit_scaled = model(torch.from_numpy(x_fit_scaled)).detach().numpy().flatten()
-
-        # map back to original values
-        x_fit_orig = scaler_x.inverse_transform(x_fit_scaled)
+        x_fit_orig = scaler_x.inverse_transform(x_fit_scaled.reshape(-1, 1))
         y_fit_orig = scaler_y.inverse_transform((y_fit_scaled / y_scalar).reshape(-1, 1)).flatten()
-
-        y_train_pred = model(X_tensor).detach().numpy().flatten()
-        ss_res = np.sum((y_scaled.flatten() - y_train_pred) ** 2)
-        ss_tot = np.sum((y_scaled.flatten() - np.mean(y_scaled.flatten())) ** 2)
-        r2 = 1 - ss_res / ss_tot
 
         removed_str = ",".join(map(str, removed_clusters)) if removed_clusters else "none"
         ax.plot(x_fit_orig, y_fit_orig, color=fit_color or None, linewidth=2,
-                label=f"Fit (removed: {removed_str})")
+                label=f"NN Fit (removed: {removed_str})")
         ax.annotate(
             rf"$R^2$={r2:.3f}",
             xy=(x_fit_orig[-1], y_fit_orig[-1]),
@@ -358,16 +332,12 @@ def combined_NN_clustering(df, name, xcol, ycol,
             arrowprops=dict(arrowstyle="->", lw=0.5)
         )
 
-    # Step 4: Final formatting
     ax.set_xlabel(xcol)
     ax.set_ylabel(ycol)
-    ax.set_title(f"Clustering and Nonlinear Regression for {name}\n"
-                 f"Filtered data between {filteringBounds[0]}, {filteringBounds[1]}, "
-                 f"{filteringBounds[2]}:1 horizontal scaling")
+    ax.set_title(f"Clustering + Neural Network Regression for {name}\n"
+                 f"Filtered between {min_val}, {max_val}, {y_scalar}:1 scaling")
 
-    handles, labels = ax.get_legend_handles_labels()
-    by_label = {l: h for h, l in zip(handles, labels)}
-    ax.legend(by_label.values(), by_label.keys(), frameon=True, fontsize=8, loc='lower right')
+    ax.legend(frameon=True, fontsize=8, loc='lower right')
     ax.grid(True, which='both', linestyle='--', linewidth=0.5)
     plt.tight_layout()
     plt.show()
